@@ -1,0 +1,9 @@
+Dự án được thực hiện bởi team Pro4!
+Giới thiệu sơ lược: 	
+Công nghệ Beacon không phải là khái niệm quá mới lạ, nhưng vẫn tạo được sức hút đối với sự phát triển của mobile app và được dự đoán sẽ trở nên phổ biến hơn trong năm 2022.
+Công nghệ này cung cấp một liên kết giữa thế giới trực tuyến và ngoại tuyến, tạo điều kiện cho người dùng mobile app tương tác với các cửa hàng thực, cho phép các doanh nghiệp tìm hiểu và nắm bắt được nhu cầu của khách hàng.
+
+Tính đến thời điểm hiện nay, ngành bán lẻ đã áp dụng công nghệ beacon vào rất nhiều khía cạnh trong quá trình kinh doanh. Nhiều nhà bán lẻ hiện đã sử dụng công nghệ này để thu thập thông tin về cách người mua hàng tương tác với cửa hàng thực. Từ đó, họ có thể theo dõi các mô hình mua sắm của khách hàng và phân phối những nội dung quảng cáo phù hợp nhất.
+
+Ngoài ra, công nghệ này cũng rất hữu ích trong việc điều hướng qua các trung tâm mua sắm sầm uất và một số cửa hàng nhỏ lẻ. Trong những năm tới, công nghệ beacon sẽ tiếp tục mở rộng khi ngày càng có nhiều nhà bán lẻ và các lĩnh vực khác đón nhận.
+

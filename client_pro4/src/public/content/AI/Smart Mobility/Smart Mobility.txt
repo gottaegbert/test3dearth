@@ -1,0 +1,9 @@
+Dự án được thực hiện bởi team Pro4!
+Giới thiệu sơ lược: 
+Smart Mobility bao gồm 2 sản phẩm Hệ thống giám sát người lái và Hệ thống quan sát toàn cảnh 360 độ. Bộ sản phẩm ra đời với sứ mệnh: “Ứng dụng trí tuệ nhân tạo để đem lại trải nghiệm lái xe an toàn, thoải mái cho người điều khiển phương tiện, từ đó tạo nên sự đổi mới cho ngành công nghiệp ô tô”.
+
+Trước khi khát vọng về những chiếc ô tô không người lái trở thành hiện thực, con người vẫn sẽ điều khiển các phương tiện giao thông và công nghệ sẽ đóng một vai trò không nhỏ trong việc bảo đảm an toàn cho người lái.
+
+Hệ thống giám sát người lái của Chúng tôi có thể nhận diện các trạng thái và hành vi nguy hiểm của người lái như buồn ngủ, mệt mỏi, sử dụng điện thoại khi tham gia giao thông... từ đó đưa ra các cảnh báo kịp thời. Hệ thống có tính tương thích cao, có thể tích hợp dễ dàng với nhiều nền tảng phần cứng, giúp các nhà sản xuất ô tô tối ưu hóa chi phí chuyển đổi.
+
+Trong khi đó, sản phẩm hệ thống quan sát toàn cảnh 360 độ cho phép người lái kiểm soát toàn bộ môi trường xung quanh ô tô và tự động phát hiện người đi bộ, xe máy, ô tô và chướng ngại vật tại điểm mù. Tính năng này vốn chỉ xuất hiện ở các dòng xe hạng sang, tuy nhiên, với mức chi phí cạnh tranh của Smart Mobility, sản phẩm này có thể đem lại lợi ích cho mọi phân khúc ô tô, từ bình dân đến cao cấp.

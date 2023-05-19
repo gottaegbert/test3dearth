@@ -1,0 +1,43 @@
+form input {
+  font-size: 30px;
+  width: 100%;
+}
+form textarea {
+  font-size: 30px;
+  width: 100%;
+}
+.wrap-input {
+  position: relative;
+}
+.form-control {
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(189, 167, 167);
+  transition: 0.5s;
+}
+.wrap-input span {
+  position: absolute;
+  left: 0;
+  padding: 20px 35px;
+  pointer-events: none;
+  color: rgba(4, 0, 0, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.form-control:valid ~ span,
+.form-control:focus ~ span {
+  color: black;
+  transform: translateX(40px) translateY(-7px);
+  font-size: 0.75em;
+  padding: 0 20px;
+  background-color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  letter-spacing: 0.2em;
+}
+
+.form-control:valid,
+.form-control:focus {
+  border: 1px solid #00dfc4;
+}

@@ -1,0 +1,54 @@
+/* to top */
+
+#myBtn {
+    display: flex;
+    position: fixed;
+    bottom: 80px;
+    right: 1%;
+    z-index: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--footer-content-color);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  #myBtn i {
+    font-size: 44px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  
+  /* end top btn */
+  
+  @keyframes changecolor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+  }

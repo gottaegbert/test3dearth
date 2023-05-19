@@ -1,0 +1,8 @@
+.button {
+  visibility: hidden;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding : 0 ;
+  margin : 0;
+  /* margin: 10px; */
+}

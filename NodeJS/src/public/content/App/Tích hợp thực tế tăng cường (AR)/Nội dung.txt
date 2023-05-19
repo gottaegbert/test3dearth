@@ -1,0 +1,10 @@
+Dự án được thực hiện bởi team Pro4!
+Giới thiệu sơ lược:
+Tích hợp AR đã là một xu hướng phát triển mobile app trong những năm vừa qua và được dự đoán sẽ tiếp tục trở thành một làn sóng mới trong năm 2022.
+
+Ưu điểm đặc biệt của AR chính là khả năng sự tích hợp vào không gian kinh doanh, cho phép người bán và nhà cung cấp dịch vụ tương tác với khách hàng của họ theo những phương pháp cá nhân hóa hơn. Ngoài ra, AR cũng cho phép các doanh nghiệp tạo ra trải nghiệm hoặc giới thiệu những câu chuyện thương hiệu thú vị với người dùng của mình.
+
+Khi ngày càng có nhiều doanh nghiệp nắm bắt sự phát triển của công nghệ, app developers sẽ cần phát triển các tính năng và chức năng sáng tạo hơn nhằm đảm bảo người dùng AR có được trải nghiệm phong phú nhất.
+
+Vào năm 2022, AR sẽ tiếp tục là một phần quan trọng của sự phát triển ứng dụng di động trong các lĩnh vực khác nhau từ bán lẻ đến kỹ thuật cho đến bất động sản.
+

@@ -1,0 +1,481 @@
+<header>
+  <div class="the_left_nav">
+    <div class="logo">
+      <img src="img/img_logo/logo.jpg" alt="" />
+    </div>
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass icon"></i>
+      <input type="text" placeholder="Search..." />
+    </div>
+  </div>
+  <div class="the_center_nav">
+    <a href="../homepage" id="homepage" class="fa-solid fa-house icon 1"></a>
+    <a
+      href="../product"
+      id="product"
+      class="fa-solid fa-earth-americas icon 2"
+    ></a>
+    <a
+      href="../detail"
+      id="projects"
+      class="fa-solid fa-circle-dollar-to-slot icon 3"
+      style="font-size: 28px;"
+    ></a>
+
+  </div>
+  <div class="the_right_nav" onclick="handle_user()">
+    <img id="img_login" src="{{users.img_author}}" alt="" />
+    <p>{{users.name_author}}
+      <i class="fa-solid fa-sort-down icon"></i>
+    </p>
+    <ul class="user-drop">
+      <i class="fa-solid fa-xmark project_close" onclick="handle_user()"> </i>
+      <div class="menu_drop">
+        <li>
+          <a href="/profile"> Profile </a>
+        </li>
+        <li>
+          <a href="/wallet"> Wallet </a>
+        </li>
+        <li>
+          <a href="/post_project_created"> Add new project </a>
+        </li>
+        <li>
+          <a href="home"> Logout </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <div class="bars">
+    <i class="ti-menu" onclick="open_nav_mobile()"></i>
+  </div>
+  <div class="nav_mobile">
+    <div class="close" onclick="close_nav_mobile()">
+      <i class="ti-close">
+
+      </i>
+      Close
+    </div>
+    <div class="homepage" style="padding: 20px;">
+      <a
+        id="homepage"
+        class="fa-solid fa-house icon 1"
+        style="padding: 0 10px;"
+        href="homepage"
+      >
+      </a>
+      <a href="homepage">
+        HOME
+      </a>
+    </div>
+    <div class="product" style="padding: 20px;">
+      <a
+        id="product"
+        class="fa-brands fa-atlassian icon 2"
+        style="padding: 0 10px;"
+        href="product"
+      >
+      </a>
+      <a href="product">
+        POSTS
+      </a>
+    </div>
+    <div class="projects" style="padding: 20px;">
+      <a
+        id="projects"
+        class="fa-solid fa-earth-americas icon 3"
+        style="padding: 0 10px;"
+        href="detail"
+      >
+      </a>
+      <a href="detail">
+        PROJECTS
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="nav_main_post">
+  <ul>
+    <div class="over_view" onclick="open_over_view()">
+      <i class="fa-solid fa-eye"></i>
+      OVER VIEW
+    </div>
+    <div class="faq" onclick="open_faq()">
+      <i class="fa-solid fa-file-circle-question"></i>
+      FAQ
+    </div>
+    <div class="story" onclick="open_story()">
+      <i class="fa-solid fa-book-open-reader"></i>
+      STORY
+    </div>
+    <div class="rewards" onclick="open_rewards()">
+      <i class="fa-solid fa-gifts"></i>
+      REWARDS
+    </div>
+  </ul>
+</div>
+
+<div class="main_post">
+  <div
+    style="position:relative;display: flex; flex-direction: column;width: 70%;"
+  >
+    <form method="POST" action="/post_project_created/store">
+      <div class="form-group">
+        <div style="display: flex; flex-direction: column;">
+          <label
+            style="font-size: 30px;font-weight: bold;text-align: center;"
+            for="img_big"
+          >PROJECT IMAGE</label>
+          <p style="text-align: center; padding: 20px 0;">Add an image that
+            clearly represents your project. Choose one that looks good at
+            different sizes—it’ll appear on your project page, across the
+            Kickstarter website and mobile apps, and (when shared) on social
+            channels.</p>
+          <p style="text-align: center;padding: 20px 0;">Your image should be at
+            least 1024x576 pixels. It will be cropped to a 16:9 ratio.</p>
+          <img
+            style="margin: 20px 50px;margin: 0 auto; z-index: 1"
+            src=""
+            alt=""
+            id="image"
+            width="300"
+            height="300"
+          />
+          <input
+            style="width: 80%;margin: 20px auto 60px auto;"
+            type="file"
+            class="form-control"
+            id="img_big"
+            name="img_big"
+            onchange="chooseFile(this)"
+            accept="image/gif , image/jpeg, image/png"
+          />
+        </div>
+
+        <hr style="width: 70%; margin: 0 auto;" />
+
+        <div style="display: flex; flex-direction: column;margin-top: 60px;">
+          <label
+            style="font-size: 30px;font-weight: bold;text-align: center;"
+            for="main_title"
+          >PROJECT TITLE</label>
+          <p style="text-align: center; padding: 20px 0;">Write a clear, brief
+            title and subtitle to help people quickly understand your project.
+            Both will appear on your project and pre-launch pages.</p>
+          <div style="position: relative;">
+            <input
+              required="required"
+              type="text"
+              class="form-control"
+              id="main_title"
+              name="main_title"
+              style="padding : 20px 30px;font-size : 20px;border-radius: 20px;border : 2px solid rgb(189, 167, 167)"
+              placeholder=""
+            />
+            <span>Write about project title</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column;margin-top: 60px;">
+          <label
+            style="font-size: 30px;font-weight: bold;text-align: center;"
+            for="main_content"
+          >GENERAL INTRODUCTION</label>
+          <p style="text-align: center; padding: 20px 0;">Potential backers will
+            also see them if your project appears on category pages, search
+            results, or in emails we send to our community.</p>
+          <div style="position: relative;">
+            <input
+              required="required"
+              type="text"
+              class="form-control"
+              id="main_content"
+              name="main_content"
+              style="margin-bottom: 80px;padding : 20px 30px;font-size : 20px;border-radius: 20px;border : 2px solid rgb(189, 167, 167)"
+              placeholder=""
+            />
+            <span>Write about general introduction</span>
+
+          </div>
+
+        </div>
+
+        <hr style="width: 70%; margin: 0 auto;" />
+
+        <div style="display: flex; flex-direction: column;margin: 60px 0;">
+          <label
+            style="font-size: 30px;font-weight: bold;text-align: center;"
+            for="main_content"
+            for="title_money_pledged"
+          >FUNDING GOAL</label>
+          <p style="text-align: center; padding: 10px 0;">Set an achievable goal
+            that covers what you need to complete your project.</p>
+          <p style="text-align: center; padding: 10px 0 20px 0;">Funding is
+            all-or-nothing. If you don’t meet your goal, you won’t receive any
+            money.</p>
+          <div style="position: relative;">
+            <input
+              required="required"
+              type="text"
+              class="form-control"
+              id="title_money_pledged"
+              name="title_money_pledged"
+              style="padding : 20px 30px;font-size : 20px;border-radius: 20px;border : 2px solid rgb(189, 167, 167)"
+              placeholder=""
+            />
+            <span>Write about funding goal</span>
+
+          </div>
+        </div>
+        <button
+          style="padding: 10px 20px;font-size: 30px;border-radius: 10px;border : 2px solid rgb(179, 164, 164)"
+          onclick="open_faq()"
+        ><i
+            class="fa-solid fa-arrow-right-to-bracket"
+            style="margin: 0 20px;"
+          ></i>NEXT</button>
+
+      </div>
+    </form>
+
+    <div id="modal_preview">
+      <div
+        style="display: flex;justify-content: right;"
+        onclick="onClick_close_preview()"
+      >
+        <i class="fa-solid fa-circle-xmark" style="font-size: 30px;"></i>
+      </div>
+      <div style="display: flex;justify-content: space-around;">
+        <div class="img_preview">
+          <img class="main_prj_video" />
+        </div>
+        <div class="info_preview">
+          <h5>FUNDING</h5>
+          <h2></h2>
+          <h4></h4>
+          <div class="ctn_statistic">
+            <div class="ctn_pledged_backers">
+              <div class="pledged">
+                $<span>0</span>
+                <div class="title"></div>
+              </div>
+              <div class="backers">
+                <span>0</span>
+                <div class="title">backers</div>
+              </div>
+            </div>
+          </div>
+          <div class="complete_figures">
+            <div class="complete">
+
+            </div>
+          </div>
+          <div class="percent_complete">
+
+          </div>
+          <div class="form_donate">
+            <button class="support_this">
+              SUPPORT THIS
+            </button>
+            <button class="follow">
+              FOLLOW
+            </button>
+            <div class="ctn_social">
+              <i class="fa-brands fa-facebook" style="color: #39579a"></i>
+              <i class="fa-brands fa-telegram" style="color: #38b3f1;"></i>
+              <i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      id="preview"
+      style="padding: 10px 20px;border-radius: 10px;border : 2px solid rgb(179, 164, 164);"
+    ><i
+        class="fa-solid fa-eye"
+        style="margin: 0 20px;border-radius: 10px;"
+      ></i>PREVIEW
+    </button>
+
+  </div>
+</div>
+
+<div class="FAQ_post">
+  <div style="width: 70%;">
+    <div style="display: flex;flex-direction: row-reverse;">
+      <button
+        style="font-size: 30px; padding : 10px 20px;border : 2px solid rgb(183, 170, 170);border-radius: 10px;"
+        onclick="add_FAQ()"
+      >
+        <i class="fa-solid fa-plus"></i>
+        ADD QUESTION
+      </button>
+    </div>
+    <form class="ctn_FAQ" method="POST" action="/post_project_created/faq">
+      <div class="question_FAQ">
+
+      </div>
+      <button
+        type="submit"
+        onclick="open_story()"
+        style="font-size: 30px; padding : 10px 20px;border : 2px solid rgb(183, 170, 170);border-radius: 10px;"
+      >
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        NEXT
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="story_post" style="min-height: 274px;">
+  <div style="width: 80%;display : flex;justify-content: right;">
+    <div class="button_add_str">
+      <button onclick="add_story_title()">
+        <i class="fa-solid fa-plus"></i>
+        ADD TITLE
+      </button>
+      <button onclick="add_story_content()">
+        <i class="fa-solid fa-plus"></i>
+        ADD CONTENT
+      </button>
+      <button onclick="add_story_image()">
+        <i class="fa-solid fa-plus"></i>
+        ADD IMAGE
+      </button>
+    </div>
+    <div style="width : 80%;">
+      <form method="POST" action="/post_project_created/story">
+        <div class="input_add_str">
+
+        </div>
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="rewards_post">
+
+</div>
+
+<div style="height: 200px;"></div>
+
+<div class="ctn__footer">
+  <div class="ctn__footer__content">
+    <div class="footer__colum f__strart">
+      <a href="signup" style="border: none;">Get Started</a>
+      <ul>
+        <li><a href="Login">Start Fundraise</a></li>
+        <li><a href="#">Investor Signup</a></li>
+        <li><a href="#">Account Login</a></li>
+      </ul>
+    </div>
+    <div class="footer__colum f__browse">
+      <a href="#">Browse</a>
+      <ul>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Recently</a></li>
+        <li><a href="#">Start-up Magazine</a></li>
+        <li><a href="#">Communities</a></li>
+      </ul>
+    </div>
+    <div class="footer__colum f__resources">
+      <a href="#">Resources</a>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer__colum f__legal">
+      <a href="#">Legal</a>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div class="footer__colum f__follow">
+      <a href="#">Follow</a>
+      <ul class="list-follow">
+        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </ul>
+    </div>
+  </div>
+  <!-- another footer -->
+  <div class="ctn__footer__describle">
+    <div class="sponsor">
+      <p>Special thanks for sponsors</p>
+      <div class="ctn__brands__img">
+        <p class="img__img">
+          Brand A
+        </p>
+        <p class="img__img">
+          Brand B
+        </p>
+        <p class="img__img">
+          Brand C
+        </p>
+        <p class="img__img">
+          Brand D
+        </p>
+        <p class="img__img">
+          Brand E
+        </p>
+      </div>
+    </div>
+    <div class="describle">
+      <p class="coppyright">
+        Copyright © 2022 Startups.com. All rights reserved.
+      </p>
+      <p class="content__describle">
+        PRO4 is a software as a service crowdfunding platform. PRO4 is not a
+        registered broker-dealer and does not offer investment advice or advise
+        on the raising of capital through securities offerings. PRO4 does not
+        recommend or otherwise suggest that any investor make an investment in a
+        particular company, or that any company offer securities to a particular
+        investor. PRO4 takes no part in the negotiation or execution of
+        transactions for the purchase or sale of securities, and at no time has
+        possession of funds or securities. No securities transactions are
+        executed or negotiated on or through the PRO4 platform. PRO4 receives no
+        compensation in connection with the purchase or sale of securities.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="ctn__loading__body">
+  <div class="ctn__loading">
+    <div class="ctn__loading__content">
+
+    </div>
+  </div>
+</div>
+
+<img
+  class="background_img"
+  src="img/imghome/img_background/home-bck-img-2.svg"
+  alt=""
+  style="position:absolute;top: -100px;left: 0;z-index: -1;"
+/>
+
+<img
+  class="background_img"
+  src="img/imghome/img_background/home-bck-img-2.svg"
+  alt=""
+  style="position:absolute;top: -100px;right: 0;z-index: -1;transform: rotate(180deg);"
+/>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"
+>
+</script>
+<script src="jquery.waypoints.min.js"></script>
+<script src="js/post_project_created.js"></script>

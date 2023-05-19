@@ -1,0 +1,618 @@
+    <header>
+        <div class="nav_pc">
+            <div class="the_left_nav">
+           <div class="logo">
+              <img class="logo1" src="img/img_logo/logo.jpg" alt="">
+              <img class="logo2" src="img/img_logo/logo2.jpg" alt="" style="display: none">
+          </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input type="text" placeholder="Search...">
+            </div> 
+            </div>
+            <div class="the_center_nav">
+                <a id="homepage" class="fa-solid fa-house icon 1"></a>
+                <a id="product" class="fa-solid fa-earth-americas icon 2"></a>
+                <a id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+            </div>
+             <div class="the_right_nav" onclick=handle_user()>
+                <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}} 
+                    <i class="fa-solid fa-sort-down icon"></i>
+                </p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="/wallet"> Wallet </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>  
+            </div>
+        </div>     
+        <div class="mobile_nav">
+            <div class="navtren">
+                    <div class="logo">
+                        <img class="logo1" src="img/img_logo/logo.jpg" alt="">
+                        <img class="logo2" src="img/img_logo/logo2.jpg" alt="" style="display: none">
+                    </div>
+                     <div class="search">
+                        <i class="fa-solid fa-magnifying-glass icon tk"></i>
+                    </div> 
+             </div>   
+             <div class="navduoi">
+                  <div class="the_center_nav">
+                    <a id="homepage_mobile" class="fa-solid fa-house icon 1"></a>
+                    <a id="product_mobile" class="fa-brands fa-atlassian icon 2"></a>
+                    <a id="projects_mobile" class="fa-solid fa-earth-americas icon 3"></a>
+                 </div>
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+             </div>   
+        </div>   
+        <input type="checkbox" name="" hidden="true" class="nav__input" id="nav-mobile-input">
+        <label for="nav-mobile-input"  class="nav_overlay"></label>
+        <ul class="mobile_nav_drop">
+           <label for="nav-mobile-input"><i class="fa-solid fa-xmark nav_mobile_close"></i> </label>
+           <div class="menu_mobile">
+               <a href="Game"> <li class="menu-game">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>Game</span>
+                </li>
+                </a>
+                <a href="App"><li class="menu-app">
+                    <i class="fa-brands fa-app-store icon"></i>
+                    <span>App</span>
+                </li>
+                </a>
+               <a href="Ai.html"> <li class="menu-AI">
+                    <i class="fa-solid fa-robot icon"></i>
+                    <span>AI</span>
+                </li>
+                </a>
+                <a href="costume"><li class="menu-costume">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <span>Costume</span>
+                </li>
+                </a>    
+                <a href="ecommerce"> <li class="menu-ecommerce">
+                    <i class="fa-brands fa-shopify icon"></i>
+                    <span>Ecommerce</span>
+                </li>
+                </a>
+            </div> 
+            <li class="mode-mobile">
+                <div class="moon-sun">
+                    <i class="fa-solid fa-moon moon "></i>
+                    <i class="fa-solid fa-sun sun"></i>
+                </div>
+                <span class="mode-text">Dark Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </ul>        
+    </header>
+
+    <div class="page">
+        <ul class="the_left_page letf_page" onmouseover=onmouseover_the_left_page() onmouseout=onmouseout_the_left_page()>
+           <div class="menu">
+                <li class="menu-feature-prj">
+                    <a href="#featured">
+                        <i class="fa-brands fa-hotjar"></i>
+                        <span>Featured</span>
+                    </a>
+                </li>
+                <li class="menu-game">
+                    <a href="#game">
+                        <i class="fa-solid fa-gamepad icon"></i>
+                        <span>Game</span>
+                    </a>
+                </li>
+                <li class="menu-app">
+                    <a href="">
+                        <i class="fa-brands fa-app-store icon"></i>
+                        <span>App</span>
+                    </a>
+                </li>
+                <li class="menu-Art">
+                    <a href="#art">
+                        <i class="fa-brands fa-artstation"></i>
+                        <span>Art</span>
+                    </a>
+                </li>
+                <li class="menu-costume">
+                    <a href="">
+                        <i class="fa-solid fa-shirt icon"></i>
+                        <span>Costume</span>
+                    </a>
+                </li>    
+            </div> 
+            <li class="mode" onclick=log()>
+                <div class="moon-sun">
+                    <i class="fa-solid fa-moon moon "></i>
+                    <i class="fa-solid fa-sun sun"></i>
+                </div>
+                <span class="mode-text">Dark Mode</span>
+                <div class="toggle-switch" onclick=toggle_dark_light()>
+                    <span class="switch"></span>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="featured_projects">
+            <div class="img_prj_featured" style="background-image: url(img/imgdetail/slide4.jpg);">
+
+            </div>
+            <div class="navbar_trans">
+                <div class="trans">
+
+                </div>
+            </div>
+        </div>
+<!-- potential project -->
+        <div class="potential_projects pp_featured" id="featured">
+            <h4>FEATURED PROJECT</h4>
+            <div class="form">
+                <div class="form_1-1">
+                    <div class="img_w_title">
+                        <img  src="img/imgdetail/pp1.png" alt="">
+                        <div class="title">
+                            <h5>Coolmate : Menfashion - Shopping solution for men's wardrobe</h5>
+                            <a>A male fashion startup project from Vietnam. 
+                                Coolmate offers a convenient shopping solution for men.
+                                It is expected that Google will call for $3000 in the first round
+                            </a>
+                        </div>
+                    </div>
+                    <div class="progessbar"></div>
+                </div>
+                <div class="form_1-2">
+                    <div class="block">
+                        <div class="form_bl bl1" style="background-image: url(img/imgdetail/feature_prj_2.avif);">
+                            <div class="title">
+                                <h5>Bed Pillow | Adaptive ergonomics to improve your sleep</h5>
+                                <a href="/create_project/bed-pillow-or-adaptive-ergonomics-to-improve-your-sleep" style="color: white;font-size: small;text-decoration: none;">Innovative design and high-quality materials for a proper rest in any position</a>
+                            </div>
+                        </div>
+                        <div class="form_bl bl2" style="background-image: url(img/imgdetail/feature_prj_1.avif);">
+                            <div class="title">
+                                <h5>Mood. Hard Enamel Pins</h5>
+                                <a href="/create_project/mood-hard-enamel-pins" style="color: white;font-size: small;text-decoration: none;">A series of pins based on mu.andcoco's illustrations spreading peaceful and positive vibes only.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="form_bl bl3" style=" background-image: url(img/imgdetail/feature_prj_3.avif);">
+                            <div class="title">
+                                <h5>DIGI SWAP || Upcycling film cameras into digital cameras</h5>
+                                <a href="/create_project/digi-swap-or-or-upcycling-film-cameras-into-digital-cameras" style="color: white;font-size: small;text-decoration: none;">Patented adapter and app that upcycles film cameras allowing you to use the original camera settings to capture digital photos and video.</a>
+                            </div>
+                        </div>
+                        <div class="form_bl bl4" style=" background-image: url(img/imgdetail/feature_prj_4.avif);">
+                            <div class="title">
+                                <h5>An Edge A Center: A Book of Photos From the End of the Earth</h5>
+                                <p>Portraits, landscapes, and contemplative scenes from the immense and bizarre territory otherwise known as California.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured_projects_bars bars">
+                <button><i class="fa-solid fa-backward"></i></button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button><i class="fa-solid fa-forward"></i></button>
+            </div>
+ 
+        </div>
+        <hr>
+<!-- end potential project -->
+
+<!-- Art project -->
+<div class="potential_projects pp_art" id="art">
+    <h4>ART</h4>
+    <div class="form" >
+        <div class="form_1-1">
+            <div class="img_w_title">
+                <img  src="img/imgdetail/art1.jpg" alt="">
+                <div class="title">
+                    <h5>Restore Vietnam's ancient history</h5>
+                    <a href="/create_project/hoi-sinh-co-phuc-tuong-lai-noi-dai-tu-qua-khu">
+                        Project on restoration, collection and research on ancient costume culture in different eras of Vietnam.
+                          In order to highlight the unique characteristics of Vietnamese culture
+                        <br>
+                        <span style="font-size: smaller; margin-top: 50px;">By dhieuVN</span>
+                    </a>
+                </div>
+            </div>
+            <div class="progessbar"></div>
+        </div>
+        <div class="form_1-2" >
+            <div class="block">
+                <div class="form_bl bl1">
+                    <img src="img/imgdetail/art2.avif" alt="">
+                    <div class="title">
+                        <h5>Bibliotech Tarot | A cyberpunk scifi horror tarot deck</h5>
+                        <p>Cyberpunk tarot card project by a talented young design team
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By Young Team</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form_bl bl2">
+                    <img src="img/imgdetail/art3.jpg" alt="">
+                    <div class="title">
+                        <h5>The Sanctuary</h5>
+                        <p>Compassion in action. Help build a space that rebuilds lives.
+                            We are creating a living work of art - a space to heal, and to begin again.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="form_bl bl3">
+                    <img src="img/imgdetail/art4.avif" alt="">
+                    <div class="title">
+                        <h5>Witness : a creative hub in Oakland CA</h5>
+                        <p>
+                            Witness is brought to you by Oakland artist Critty Smitty. The shop will offer inspiring goods and creative workshops.
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By Mariia</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form_bl bl4">
+                    <img src="img/imgdetail/art5.avif" alt="">
+                    <div class="title">
+                        <h5>Ceramic jewelry</h5>
+                        <p>
+                            Hello. My name is Povetova Maria and I want introduce my project "PM ceramic jewelry" to you.
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By GLang</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="art_projects_bars bars">
+        <button><i class="fa-solid fa-backward"></i></button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button><i class="fa-solid fa-forward"></i></button>
+    </div>
+</div>
+<hr>
+
+<!-- end game project -->
+
+<!-- game project -->
+<div class="potential_projects pp_game" id="game">
+    <h4>GAME PROJECT</h4>
+    <div class="form">
+        <div class="form_1-1">
+            <div class="img_w_title">
+                <img  src="img/imgdetail/game1.jpg" alt="">
+                <div class="title">
+                    <h5>DIE: The Roleplaying Game</h5>
+                    <a>A tabletop RPG based on the DIE comic, created by Kieron Gillen and Stephanie Hans, and produced by the makers of Spire and Heart.
+                        <br>
+                        <span style="font-size: smaller; margin-top: 50px;">By GLang</span>
+                    </a>
+                </div>
+            </div>
+            <div class="progessbar"></div>
+        </div>
+        <div class="form_1-2" >
+            <div class="block">
+                <div class="form_bl bl1">
+                    <img src="img/imgdetail/game2.avif" alt="">
+                    <div class="title">
+                        <h5>Cultist Chaos - A Card Game</h5>
+                        <p>Lead your cult to victory in this strategic fantasy card game created and illustrated by Wizard of Barge.
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By GLang</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form_bl bl2">
+                    <img src="img/imgdetail/game3.avif" alt="">
+                    <div class="title">
+                        <h5>Baladins 📯</h5>
+                        <p>Narrative game inspired by RPG, for 1 to 4 friends in coop online! Join the quest of entertaining a dragon!
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By GLang</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="form_bl bl3">
+                    <img src="img/imgdetail/game4.avif" alt="">
+                    <div class="title">
+                        <h5>Cattails: Wildwood Story — A cozy life sim as a feral feline</h5>
+                        <p>Lead your colony into the mysterious Wildwood. Get to know the residents, fall in love, and raise a litter of kittens! 🐈
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By Falcon Development</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form_bl bl4">
+                    <img src="img/imgdetail/game5.avif" alt="">
+                    <div class="title">
+                        <h5>Hunters of the Lost Creatures</h5>
+                        <p>Collect the lost creatures and build the weirdest wildlife park. Will you choose the right hunter at the right time?
+                            <br>
+                            <span style="font-size: smaller; margin-top: 50px;">By GLang</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="game_projects_bars bars">
+        <button><i class="fa-solid fa-backward"></i></button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button><i class="fa-solid fa-forward"></i></button>
+    </div>
+    <hr>
+</div>
+{{!-- footer --}}
+  <!-- Footer -->
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="../Login/signup.html" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+{{!-- res footer --}}
+
+    {{!---------------res_footer-------------------}}
+    <div class="ctn__footer-mobile" style="display: none;">
+        <div class="footer__colum f__strart">
+            <a href="../Login/signup.html" style="border: none;">Get Started</a>
+            <ul>
+                <li><a href="../Login/login.html">Start Fundraise</a></li>
+                <li><a href="#">Investor Signup</a></li>
+                <li><a href="#">Account Login</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__browse">
+            <a href="#">Browse</a>
+            <ul>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Recently</a></li>
+                <li><a href="#">Start-up Magazine</a></li>
+                <li><a href="#">Communities</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__resources">
+            <a href="#">Resources</a>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__legal">
+            <a href="#">Legal</a>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__follow">
+            <a href="#">Follow</a>
+            <ul class="list-follow">
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </div>
+    </div>
+    </div>
+<!-- end game project -->
+    </div>
+
+    <div class="ctn__loading__body">
+        <div class="ctn__loading">
+            <div class="ctn__loading__content">
+                
+            </div>
+        </div>
+    </div>
+    {{!-- boxchat --}}
+    <div class="messenger">
+        <i class="fa-brands fa-facebook-messenger"></i>
+        
+    </div>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>Chat with PRO4!
+            <i class="fa fa-window-minimize" aria-hidden="true"></i>
+        </button>
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- To top btn -->
+
+
+
+    <!-- background_page_3 -->
+
+    <img src="img/imgbackground/background_page_3.webp" style="position:absolute;top:0 ;left: 0;z-index : -1;" alt="">
+
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <!-- end top btn -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="js/scriptdetail.js"></script>

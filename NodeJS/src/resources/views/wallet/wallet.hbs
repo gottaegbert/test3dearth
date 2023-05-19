@@ -1,0 +1,400 @@
+    <header>
+        <div class="the_left_nav">
+          <div class="logo">
+              <img src="img/img_logo/logo.jpg" alt="">
+          </div>
+          <div class="search">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input type="text" placeholder="Search...">   
+          </div> 
+        </div>
+        <div class="the_center_nav">
+            <a href="../homepage" id="homepage" class="fa-solid fa-house icon 1" style="color: #727272;"></a>
+            <a href="../product" id="product" class="fa-solid fa-earth-americas icon 2" style="color: #727272;"></a>
+            <a href="../detail" id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="color: #727272;font-size: 28px;"></a>
+
+        </div>
+        <div class="the_right_nav" onclick=handle_user()>
+           <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}}
+                    <i class="fa-solid fa-sort-down icon"></i>
+                </p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="/wallet"> Wallet </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                </ul>  
+        </div>     
+        <div class="bars">
+            <i class="ti-menu" onclick=open_nav_mobile()></i>
+        </div>    
+        <div class="nav_mobile">
+            <div class="close" onclick=close_nav_mobile()>
+                <i class="ti-close">
+                    
+                </i>
+                Close
+            </div>
+            <div class="homepage" style="padding: 20px;">
+                <a id="homepage" class="fa-solid fa-house icon 1" style="padding: 0 10px;" href="homepage">
+                </a>
+                <a href="homepage">
+                    HOME
+                </a>
+            </div>
+            <div class="product" style="padding: 20px;">
+                <a id="product" class="fa-brands fa-atlassian icon 2" style="padding: 0 10px;" href="product">
+                </a>
+                <a href="product">
+                    POSTS
+                </a>
+            </div>
+            <div class="projects" style="padding: 20px;">
+                <a id="projects" class="fa-solid fa-earth-americas icon 3" style="padding: 0 10px;" href="detail">
+                </a>
+                <a href="detail">
+                    PROJECTS
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <div style="width: 100%; height: 80px;"></div>
+    
+    <div class="ctn__solution">
+        <div class="ctn__solution__title">
+            How to get started
+        </div>
+        <div class="ctn__solution__element" style="height: 300px;">
+            <ul>
+                <li class="ctn__solution__image" style="height: 20px;">
+                    <h3 style="">
+                        <i class="fa-solid fa-1"></i>
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small">
+                    CHECK YOUR ELIGIBILITY
+                </li>
+                <li class="ctn__solution__content">
+                    Know your eligibility in two minutes. No credit check or fee required.
+                </li>
+            </ul>
+            <ul>
+                <li class="ctn__solution__image" style="height: 20px;">
+                    <h3 style="">
+                        <i class="fa-solid fa-2"></i>
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small" style="width: 80%; margin: 0 auto;">
+                    YOUR SOLUTIONS
+                </li>
+                <li class="ctn__solution__content">
+                    A CircleUp specialist identifies your financing options on a quick call.
+                </li>
+            </ul>
+            <ul>
+                <li class="ctn__solution__image" style="height: 20px;">
+                    <h3 style="">
+                        <i class="fa-solid fa-3"></i>
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small" style="width: 100%; margin: 0 auto;">
+                    GET YOUR TERMS
+                </li>
+                <li class="ctn__solution__content">
+                    Make a decision, provide your financials, & get terms in < 72 hours.
+                </li>
+            </ul>
+            <ul>
+                <li class="ctn__solution__image" style="height: 20px;">
+                    <h3 style="">
+                        <i class="fa-solid fa-4"></i>
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small" style="width: 80%; margin: 0 auto;">
+                    USE YOUR FUNDS
+                </li>
+                <li class="ctn__solution__content">
+                    Funds released by the next business day.
+                </li>
+            </ul>
+        </div>
+        <div style="display: flex;justify-content: center;margin: 0 0 50px 0;">
+            <button style="padding: 20px 30px;border-radius: 50px;">START YOUR ELIGIBILITY CHECK</button>
+            
+        </div>
+    </div>
+
+    <div style="width : 100%; display: flex; justify-content: center;">
+        <hr style="width : 50%;">
+    </div>
+
+    <div class="space_1" style="height: 300px;"></div>
+
+    <div class="ctn__feature">
+        <div class="ctn__feature__image">
+            <h2>Successfully invested projects</h2>
+                <div style="list-style: none;border: 1px solid rgb(167, 156, 156)">
+                    <ul style="background-color: #c7d4e4;">
+                        <li style="width: 30%;">Index</li>
+                        <li style="width: 70%;">Name project</li>
+                        
+                    </ul>
+                    <ul>
+                        <li style="width: 30%;">1</li>
+                        <li style="width: 70%;">Bed Pillow | Adaptive ergonomics to improve your sleep</li>
+                        
+                    </ul>
+                    <ul>
+                        <li style="width: 30%;">2</li>
+                        <li style="width: 70%;">DIGI SWAP || Upcycling film cameras into digital cameras</li>
+                        
+                    </ul>
+                    <ul>
+                        <li style="width: 30%;">3</li>
+                        <li style="width: 70%;">Restore Vietnam's ancient history</li>
+                        
+                    </ul>
+                    <ul>
+                        <li style="width: 30%;">4</li>
+                        <li style="width: 70%;">.......</li>
+                        
+                    </ul>
+                    <ul style="border: 1px solid rgb(187, 178, 178)">
+                        <i class="fa-solid fa-circle-arrow-down" style="padding: 5px 0;color: #c7d4e4;"></i>
+                    </ul>
+                </div>
+        </div>
+        
+        <div class="ctn__feature__content">
+            <div class="feature__info">
+                <div class="about__shopping">
+                    <img style="width: 100%;" src="img/imgwallet/gift/gift3.gif" alt="">
+                    
+                </div> 
+                <div class="about__tryonclothes">
+                    <img style="width: 100%;" src="img/imgwallet/gift/gift1.gif" alt="">
+                    
+                </div>
+                <div class="about__style">
+                    <img style="width: 100%;" src="img/imgwallet/gift/gift2.gif" alt="">
+
+                </div>
+            </div>
+            <div class="feature__background">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="ctn__solution">
+        <div class="ctn__solution__title">
+            4 popular forms of Crowd Funding
+        </div>
+        <div class="ctn__solution__element2">
+            <ul>
+                <li class="ctn__solution__image">
+                    <h3 style="border-radius: 200px;background-image: url(img/imgwallet/gift.webp);">
+                        
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small">
+                    Receive gratitude gifts
+                </li>
+                <li class="ctn__solution__content">
+                    The sponsorship amount is divided into each package, each package is a corresponding gift. Sponsors will receive gifts when the project is successful.
+                </li>
+
+                <button><i class="fa-solid fa-angles-right"></i></button>
+            </ul>
+            <ul>
+                <li class="ctn__solution__image">
+                    <h3 style="background-image: url(img/imgwallet/cophan.png);">
+                        
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small">
+                    Contribute shares
+                </li>
+                <li class="ctn__solution__content">
+                    This form is no different from buying shares of a potential new company. Investors receive shares and profits if the business company is profitable.
+                </li>
+                <button><i class="fa-solid fa-angles-right"></i></button>
+
+            </ul>
+            <ul>
+                <li class="ctn__solution__image">
+                    <h3 style="border-radius: 200px;background-image: url(img/imgwallet/tuthien.jpg);">
+                        
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small" style="width: 80%; margin: 0 auto;">
+                    Charity project
+                </li>
+                <li class="ctn__solution__content">
+                    This is a form of social organizations, non-governmental organizations when mobilizing donations to help disaster areas, people with special circumstances or sponsor centers...
+                </li>
+                <button><i class="fa-solid fa-angles-right"></i></button>
+
+            </ul>
+            <ul>
+                <li class="ctn__solution__image">
+                    <h3 style="background-image: url(img/imgwallet/tl.webp);">
+                        
+                    </h3>
+                </li>
+                <li class="ctn__solution__title-small">
+                    Hybrid form
+                </li>
+                <li class="ctn__solution__content">
+                    Donate to charity, send gratitude gifts, donate shares, give membership cards with discounts for life
+                </li>
+                <button><i class="fa-solid fa-angles-right"></i></button>
+
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="signup" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="img/imgbackground/background_page_3.webp" style="width:100%;position: fixed ;top:0 ;left: 0;z-index : -1;" alt="">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="js/wallet.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

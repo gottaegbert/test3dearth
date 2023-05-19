@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "chart.js": "^3.9.1",
+    "emoji-picker-react": "^3.6.2",
+    "mongoose-slug-generator": "^1.0.4",
+    "react-app-rewired": "^2.2.1",
+    "react-chartjs-2": "^4.3.1"
+  },
+  "name": "bwd1",
+  "version": "1.0.0",
+  "main": "datausercontroller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khang2038/BWD1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khang2038/BWD1/issues"
+  },
+  "homepage": "https://github.com/khang2038/BWD1#readme",
+  "description": ""
+}

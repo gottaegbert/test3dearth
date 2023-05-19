@@ -1,0 +1,111 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-primary-color);
+}
+
+/* Start Left Main Login */
+
+.login {
+  display: flex;
+  width: 82%;
+  height: 85%;
+  background-color: var(--login-primary-color);
+}
+
+.login .login__form-container {
+  background-color: var(--login-primary-color);
+  width: 50%;
+  height: 100%;
+}
+
+.login__form-container .login__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.login__form .login__title {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.login__form button {
+  line-height: 12px;
+  font-size: large;
+  background-color: var(--background-secondary-color);
+  color: var(--login-primary-color);
+  border: 0;
+  margin-top: 30px;
+}
+
+.login__form button:hover {
+  cursor: pointer;
+  background-color: var(--darker-background-secondary-color);
+}
+
+.login__form label,
+.login__form-container p {
+  align-self: start;
+  margin-left: 4rem;
+  margin-top: 30px;
+}
+
+.login__form .login__decs {
+  margin-top: 0;
+}
+
+.login__form > input,
+.login__form-container button {
+  height: 2.3rem;
+  width: 80%;
+  border-radius: 3rem;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.login__form > input {
+  background-color: var(--search-color);
+  font-size: unset;
+}
+
+.login__form > input:focus {
+  outline: none;
+  box-shadow: 0 1px 5px 2px var(--shadow-header-color);
+}
+
+.login__form .conditions a {
+  text-decoration: none;
+  /* font-weight: 600; */
+  color: var(--background-secondary-color);
+}
+
+.login__form .conditions > input {
+  background-color: var(--background-secondary-color);
+  border: 0;
+}
+
+.login__form .mention-sign-up {
+  font-weight: 500;
+}
+
+/* .mention-sign-up .sign-up {
+    margin-top: 10px;
+} */
+
+.login__form .mention-sign-up a {
+  text-decoration: none;
+  color: var(--background-secondary-color);
+  font-weight: 600;
+}
+/* End Left Main Login */
+
+.login .login__banner {
+  width: 50%;
+  height: 100%;
+}

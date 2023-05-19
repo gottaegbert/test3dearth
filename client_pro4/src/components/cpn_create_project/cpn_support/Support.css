@@ -1,0 +1,124 @@
+.support_wrap {
+  position: fixed;
+  top: 70px;
+  left: 150px;
+  right: 150px;
+  bottom: 20px;
+  background-color: #f6f2eb;
+  z-index: 100;
+  border-radius: 6px;
+  box-shadow: 0 1px 9px 2px #9e9e9e91
+}
+
+.support_btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 20px;
+}
+.support_container {
+  padding: 40px 80px;
+  overflow-y: scroll;
+}
+.support_container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.support_container::-webkit-scrollbar {
+  display: none;
+}
+.support_heading {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.support_desc {
+  font-size: 20px;
+}
+.support_info {
+  display: flex;
+  margin-top: 30px;
+}
+.support_info_img {
+  width: 30%;
+  height: 200px;
+  margin-right: 100px;
+}
+.support_info_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.support_info_body {
+}
+.support_info_name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.support_info_funded {
+  color: #4c7362;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.support_info_percent {
+}
+.support_info_author {
+}
+.info_author_name {
+  text-decoration: underline;
+}
+.support_pledge {
+  margin-top: 20px;
+}
+.support_pledge_heading {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.support_pledge_content {
+  margin-left: 30px;
+}
+.pledge_content_wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.pledge_content_wrap.bonus {
+  justify-content: space-between;
+}
+.support_line {
+  margin: 20px 0;
+}
+.support_total_money {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.support_total_money h5 {
+  font-weight: 500;
+}
+.support_total_money span {
+  color: #4c7362;
+  font-weight: 500;
+}
+.support_btn_next {
+  padding: 10px 16px;
+  font-size: 20px;
+  margin-top: 20px;
+  float: right;
+  background-color: #028858;
+  color: white;
+  cursor: pointer;
+  border: none;
+  opacity: 0.4;
+  transition: all 0.2s linear;
+  border-radius: 6px;
+}
+.support_btn_next:hover {
+  opacity: 1;
+}
+.support_btn_next i {
+  margin-left: 6px;
+}

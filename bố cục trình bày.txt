@@ -1,0 +1,38 @@
+#1 : homepage
++ Demo 1 vài featured project
+
+#2 : show page đăng kí -> đăng nhập (tk : nhatquynh)
+
+#3 : page product : 
+	- See more
+	- Tym 
+	- Comment
+	- Fundraiser -> profile hoàng , tịnh
+	- Search -> profile quỳnh
+	- Đăng bài post -> demo 3d -> update -> delete
+	- Phân trang : App -> game -> ecommerce
+	- Box chat (nt khi cần hỗ trợ từ PRO4)
+	- Investment -> Icon -> Voice (muốn trao đổi thông tin  hoặc hợp tác làm việc)
+
+#4 : page details :
+ 	- demo thanh nav
+	- Dark mode
+	- Demo project mood (note : gotoTop)
+		+ story
+		+ FAQ
+		+ Comment
+		+ Statistic
+		+ Support this -> QR 
+  
+#5 : page create project
+	- Tổng quan 3 trang
+	- Preview page 1 -> FAQ -> page 3 ->use template -> demo template -> preview -> send
+	- Comment (ko statistic)
+
+#6 : page profile 
+	- Đóng mở edit 
+	- Statistic mỹ
+	
+#7 : page wallet
+
+#8 : responsive -> log out

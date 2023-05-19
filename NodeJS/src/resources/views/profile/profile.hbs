@@ -1,0 +1,376 @@
+    <header>
+        <div class="the_left_nav">
+          <div class="logo">
+              <img src="img/img_logo/logo.jpg" alt="">
+          </div>
+          <div class="search">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input type="text" placeholder="Search...">   
+          </div> 
+        </div>
+        <div class="the_center_nav">
+            <a href="../homepage" id="homepage" class="fa-solid fa-house icon 1" style="color: #727272;"></a>
+            <a href="../product" id="product" class="fa-solid fa-earth-americas icon 2" style="color: #727272;"></a>
+            <a href="../detail" id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="color: #727272;font-size: 28px;"></a>
+
+        </div>
+        <div class="the_right_nav" onclick=handle_user()>
+             <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}} 
+                    <i class="fa-solid fa-sort-down icon"></i>
+                </p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="/wallet"> Wallet </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>
+        </div>     
+        <div class="bars">
+            <i class="ti-menu" onclick=open_nav_mobile()></i>
+        </div>    
+        <div class="nav_mobile">
+            <div class="close" onclick=close_nav_mobile()>
+                <i class="ti-close">
+                    
+                </i>
+                Close
+            </div>
+            <div class="homepage" style="padding: 20px;">
+                <a id="homepage" class="fa-solid fa-house icon 1" style="padding: 0 10px;" href="homepage">
+                </a>
+                <a href="homepage">
+                    HOME
+                </a>
+            </div>
+            <div class="product" style="padding: 20px;">
+                <a id="product" class="fa-brands fa-atlassian icon 2" style="padding: 0 10px;" href="product">
+                </a>
+                <a href="product">
+                    POSTS
+                </a>
+            </div>
+            <div class="projects" style="padding: 20px;">
+                <a id="projects" class="fa-solid fa-earth-americas icon 3" style="padding: 0 10px;" href="detail">
+                </a>
+                <a href="detail">
+                    PROJECTS
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div style="margin-top: 60px;" class="content_profile">
+        <div class="right_content">
+            <div class="nav" style="display: flex;flex-direction: column;">
+
+                <div class="wrapper">
+                    <div class="icon add_profile">
+                        <i class="fa-solid fa-plus" onclick=trans_add_profile()></i>
+                        <span class="tooltip">Detail</span>
+                    </div>
+                    <div class="icon user">
+                        <i class="fa-solid fa-user" onclick=trans_user()></i>
+                        <span class="tooltip">About me</span>
+                    </div>
+                    <div class="icon my_project">
+                        <i class="fa-solid fa-file-shield" onclick=trans_my_project()></i>
+                        <span class="tooltip">My project</span>
+                    </div>
+                    <div class="icon prj_history">
+                        <i class="fa-solid fa-clock-rotate-left" onclick=trans_prj_history()></i>
+                        <span class="tooltip">History</span>
+                    </div>
+                    <div class="icon log_out">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                    </div>
+                </div>
+
+                <div class="nav_bar_profile">
+                     <div class="ctn_about_me open">
+                        <div class="info_user">
+                            <div class="label">
+                                <p style="margin: 20px 0;">
+                                    Hi!
+                                    Welcome to my wall 
+                                    <i class="fa-solid fa-pencil" style="font-size: 15px; margin-left: 5px; margin-bottom: 2.5px;"></i>
+                                </p>
+                                <hr style="width: 60%; margin: 20px auto;">
+                            </div>
+                            <div class="infor">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Name
+                                        </td>
+                                        <td class="user_name" >
+                                            Phạm Thanh Hưng
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            D.O.B
+                                        </td>
+                                        <td class="user_dob">
+                                            10/09/1972
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="user_tel">
+                                            Phone
+                                        </td>
+                                        <td>
+                                            +84 326 xxx xxxx
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Address
+                                        </td>
+                                        <td class="user_address">
+                                            Ha Noi, Viet Nam
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Email
+                                        </td>
+                                        <td class="user_email">
+                                            sharkhung@cenland.com.vn
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Strength
+                                        </td>
+                                        <td>
+                                            Business, Invest
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <hr style="height: 70%;margin: auto 0;">
+                        <div class="project_demo_user">
+                            <h2 style="height: 30%;">
+                                <i class="fa-solid fa-id-badge" style="margin-right: 20px;"></i>Contact
+                            </h2>
+                            <ul>
+                                <li style="--i:6;--clr:#1877f2;">
+                                    <a href="https://www.facebook.com/hungpham7968">
+                                        <span>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </span>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li style="--i:5;--clr:#25d366;">
+                                    <a href="#">
+                                        <span>
+                                            <i class="fa-brands fa-telegram"></i>
+                                        </span>
+                                        Telegram
+                                    </a>
+                                </li>
+                                <li style="--i:4;--clr:#1da1f2;">
+                                    <a href="#">
+                                        <span>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </span>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li style="--i:3;--clr:#c32aa3;">
+                                    <a href="#">
+                                        <span>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </span>
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+
+                     <div class="ctn_my_project">
+                        <div class="total_projects">
+                            <h2>
+                                My total projects
+                            </h2>  
+
+                            <div class="slide-container swiper">
+                <div class="slide-content"> 
+                    <div class="card-wrapper swiper-wrapper">
+                        {{#each create_prj}}
+                        <div class="card swiper-slide" style="height: 600px;position: relative;">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img style="transition: transform 2s;" src="img/imgproject/{{this.img_big}}" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <a href="create_project/{{this.slug}}" class="name">{{this.main_title}}</a>
+                                <p class="description">{{this.main_content}}</p>
+
+                                <button class="button" style="position: absolute;bottom: 0">View More</button>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+                            </div>
+                            
+                        </div>
+
+
+                        <hr style="width : 60%;margin: 0 auto;">
+                        
+                            <h2 style="margin: 30px 0;">Progress project</h2>
+                        <div class="project_progress">
+                            <div style="list-style: none;">
+                                <ul style="background-color: #9aafc9;">
+                                    <li style="width: 10%;">Index</li>
+                                    <li style="width: 50%;">Name project</li>
+                                    <li style="width: 20%;">Percent progress</li>
+                                    <li style="width: 20%;">Complete</li>
+                                </ul>
+                                <ul>
+                                    <li style="width: 10%;">1</li>
+                                    <li style="width: 50%;">Bed Pillow | Adaptive ergonomics to improve your sleep</li>
+                                    <li style="width: 20%;">100%</li>
+                                    <li style="width: 20%;"><i style="color: #63b196;" class="fa-solid fa-clipboard-check"></i></li>
+                                </ul>
+                                <ul>
+                                    <li style="width: 10%;">2</li>
+                                    <li style="width: 50%;">DIGI SWAP || Upcycling film cameras into digital cameras</li>
+                                    <li style="width: 20%;">78%</li>
+                                    <li style="width: 20%;"><i style="color: #b18163;" class="fa-solid fa-circle-xmark"></i></li>
+                                </ul>
+                                <ul>
+                                    <li style="width: 10%;">3</li>
+                                    <li style="width: 50%;">Restore Vietnam's ancient history</li>
+                                    <li style="width: 20%;">0%</li>
+                                    <li style="width: 20%;"><i style="color: #b18163;" class="fa-solid fa-circle-xmark"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="my_project_statistic">
+                            <h2 style="width: 100%;text-align: center;margin: 50px 0;">Statistic my projects</h2>
+                            <div class="temp">
+                                <div class="detail_my_project_statistic" style="">
+                                    <canvas id="myChart" style="width: 50%;"></canvas>
+                                </div>
+                                <div class="detail_statistic">
+                                    <h3 style="margin: 40px 0;">General statistics of Pro4</h3>
+                                    <ul style="background-color: rgb(183, 217, 235);">
+                                        <li>TYPE</li>
+                                        <li>PERCENT</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Game</li>
+                                        <li>14,28%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Art</li>
+                                        <li>28,57%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Society</li>
+                                        <li>14,28%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Music</li>
+                                        <li>14,28%</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Sport</li>
+                                        <li>28,57%</li>
+
+                                    </ul>
+                                    <ul>
+                                        <li>Other</li>
+                                        <li>0%</li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+
+                     <div class="ctn_history_project">
+                        <h1 style="margin: 50% 0 0 0;">
+
+                            
+
+                        </h1>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="left_content" style="display : flex; justify-content: center;">
+        <div style="width: 80%;margin: 0 auto; position: relative;" class="left_content_detail">
+            <div style="width: 100%;">
+                <div class="avatar_profile" style="background-image: url({{users.img_author}});">
+                    
+                </div>
+            </div>
+            <h2 class="name_user">
+                {{users.name_author}}
+            </h2>
+            <div class="title_user">
+                “Các bạn phải có một ước mơ đủ lớn để có chỗ người khác tham gia vào. Chứ ước mơ của các bạn quá bé, bản thân các bạn ngồi đã chật rồi, chúng tôi không còn chỗ"
+            <div class="edit">
+                <button>Edit profile</button>
+            </div>
+            </div>
+
+            <div class="btn_hide" onclick=btn_hide_close()>
+            <i class="fa-solid fa-square-minus"></i>
+            </div>
+        </div>
+    </div>
+
+       <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/1b6a20c6b1.js" crossorigin="anonymous"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+

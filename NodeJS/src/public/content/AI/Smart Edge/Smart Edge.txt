@@ -1,0 +1,3 @@
+Dự án được thực hiện bởi team Pro4! 
+Giới thiệu sơ lược:
+Smart Edge là giải pháp phân tích video đa vật thể, áp dụng mô hình học sâu để biến đổi các camera và các thiết bị kiểm soát quyền truy cập thông thường thành những hệ thống thông minh. Sản phẩm cho phép chuyển đổi hình ảnh thành thông tin chi tiết hữu ích để tạo ra các giá trị kinh doanh cho doanh nghiệp. Đặc biệt, áp dụng mô hình học sâu, sản phẩm có thể nhận diện khuôn mặt ổn định, kể cả khi người dùng đang sử dụng khẩu trang. Ngoài mục đích thương mại, với dòng sản phẩm này, VinAI hi vọng có thể chung tay bảo vệ sức khỏe cộng đồng trong bối cảnh đại dịch còn đang diễn biến phức tạp.

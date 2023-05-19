@@ -1,0 +1,173 @@
+
+@media only screen and (max-width: 852px){
+    /* .introduce__web .ctn__content .content__title{
+        font-size: 50px;
+    } */
+    /* .ctn__image>img {
+        display: none;
+
+    } */
+    .introduce__web{
+        flex-direction: column;
+    }
+    .introduce__web .ctn__content{
+        width: 100%;
+        padding: 150px 0 100px 0;
+    }
+
+    .introduce__web .ctn__content .content__title{
+        padding: 0 10%;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .introduce__web .ctn__content .tt_home{
+        text-align: center;
+        padding: 5% 10% 10% 10%;
+    }
+
+    .introduce__web .ctn__image{
+        width: 100%;
+        padding : 50px 0;
+        margin-left: 10%;
+    }
+
+    .ctn__content .btn {
+        text-align: center;
+    }
+
+    .ms_home_1{
+        top: 0%;
+        left: -2%;
+    }
+
+    .ms_home_1_image {
+        margin : 0 !important;
+    }
+
+    .ms_home_1 .ms_home_1_hr {
+        display: none !important;
+    }
+
+    .ms_home_2 {
+        bottom: -10%;
+    }
+
+    .reason_use .reason_title{
+        padding-top: 20px;
+    }
+
+    .ms_home_2_image {
+        margin : 0 !important;
+    }
+
+    .card {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .card .form_card{
+        width: 77%;
+        margin: 0 auto 40px auto;
+        padding : 0 0 40px 0;
+
+    }
+
+    .card .form_card img{
+        width: 65%;
+        margin-top: 20px;
+
+    }
+
+    .card .form_card p{
+        font-size: 20px;
+    }
+
+    .space_2{
+        display: none!important;
+    }
+
+    .reason_use{
+        margin-top: 0;
+        flex-direction: column;
+
+    }
+
+    .reason_use .reason_title h1{
+        font-size: 28px;
+    }
+
+    
+    .reason_use .reason_title p{
+        text-align: center;
+    }
+
+    .info_item-1{
+        margin-bottom: 20px;
+    }
+
+    .info_item-1 .info_item__content{
+        width: 100%;
+        padding : 10px;
+    }
+
+    .info_item-1 img{
+        display: none;
+    }
+
+    .info_item-2{
+        margin-bottom: 20px;
+    }
+   
+    .info_item-2 .info_item__content{
+        width : 100%;
+        padding: 10px;
+    } 
+
+    .info_item-2 img{
+        display: none;
+    }
+
+    .reason_use{
+        margin-bottom: 0;
+    }
+
+    .card_project{
+        flex-direction: column;
+    }
+
+    .card_project .form_card_project{
+        width: 93%;
+        margin-bottom: 40px;
+    }
+
+    .highlights .aft_card{
+        display: none;
+    }
+
+    .highlights .pre_card{
+        display: none;
+    }
+
+    .background_1 {
+        width: 100%;
+        top: 80px;
+        display: none;
+    }
+
+    .background_2 {
+        width: 100%;
+        top: 536px;
+
+    }
+
+    .background_3 {
+        width: 100%;
+        top: 2540px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+
+}
+

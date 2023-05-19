@@ -1,0 +1,135 @@
+.mess {
+  margin-top: 61px;
+  height: calc(100vh - 61px);
+  display: flex;
+}
+.chatMenu {
+  flex: 2.5;
+  background-color: rgb(236, 236, 232);
+}
+.chatBox {
+  flex: 5.5;
+}
+.chatOnline {
+  flex: 2;
+  background-color: rgb(236, 236, 232);
+}
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatMenuInput::placeholder {
+  color: #bebebe;
+}
+
+.search_chat {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 15px;
+}
+.search_chat i {
+  position: absolute;
+  left: 30px;
+  top: 14px;
+  font-size: 1em;
+}
+
+.search_chat input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+  padding: 6px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chatMessageInput {
+  width: 70%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 1px solid #dbd8d8;
+  border: 1px solid #dbd8d8;
+}
+.chatSubmitButton {
+  width: 60px;
+  /* height: 40px; */
+  /* border: none; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+  /* background-color: rgb(6, 160, 160); */
+  color: rgb(59, 211, 140);
+  font-size: 25px;
+}
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: url(https://team.inria.fr/diana/files/2014/07/grey.png);
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+.noConversationtext {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: rgb(221, 220, 220);
+  /* text-align: center; */
+  cursor: default;
+}
+i {
+  cursor: pointer;
+}
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px 10px;
+}
+.taskbar_wrap_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.taskbar_wrap_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.taskbar_wrap_icon i {
+  padding: 0 10px;
+}

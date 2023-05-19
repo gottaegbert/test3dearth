@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Josefin+Sans&family=Nunito:ital,wght@0,300;1,200;1,300&family=Patua+One&display=swap');
+
+.cpn_modal_profile {
+  position: fixed;
+  top: 15%;
+  left: 17%;
+  width: 53%;
+  height: 81%;
+  background-color: #f2f6ff;
+  border-radius: 50px 50px 0 50px;
+  border: 2px solid #676363;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cpn_modal_profile .profile_header {
+  border-radius: 50px 50px 0 0;
+  height: 120px;
+  width: 100%;
+  background-color: #e4f8ff;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  border-bottom: 2px double #aaa;
+}
+
+.cpn_modal_profile .header_avatar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cpn_modal_profile .header_avatar img {
+  background-color: #ffffff;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  padding: 2px;
+  border: 3px solid rgb(67, 205, 255);
+}
+
+.cpn_modal_profile .header_title {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cpn_modal_profile .header_title .social_icon {
+}
+
+.cpn_modal_profile .header_title .social_icon i {
+  font-size: 25px;
+  margin: 0 5px;
+}
+
+.cpn_modal_profile .profile_body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.cpn_modal_profile .profile_body .ctn_about_me {
+  justify-content: space-around;
+  margin: 30px 10% 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cpn_modal_profile .option_profile_user {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 20px;
+  /* border-top: 2px solid rgb(146, 134, 134); */
+  /* border-bottom: 2px solid rgb(146, 134, 134); */
+  /* background-color: #e4f8ff; */
+  border-radius: 10px;
+  width: 80%;
+}
+
+.cpn_modal_profile .option_profile_user div {
+  width: 25%;
+  margin: auto 10px;
+  text-align: center;
+  align-items: center;
+}
+
+/*==========card_project_user=======*/
+
+.card_project_user {
+  width: 35%;
+  background-color: #e4f8ff;
+  border-radius: 20px;
+  margin: 0 20px 30px 20px;
+  box-shadow: 0 1px 9px 2px #9e9e9e91;
+}
+
+.card_project_user img {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.card_project_user h1 {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.card_project_user p {
+  font-size: 15px;
+  padding: 10px 10px;
+}
+
+.prj_profile_user ul {
+  width: 100%;
+  display: flex;
+  margin: 0 0 20px 0;
+  justify-content: center;
+}
+
+.prj_profile_user ul li {
+  font-size: 15px;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.cpn_modal_profile table {
+  background-color: #ffffff;
+  padding: 0 0 20px 20px;
+  border-radius: 20px;
+  box-shadow: 0 1px 9px 2px #dcd1d191;
+}
+.img-modal_profile img {
+  width: 100%;
+  height: unset;
+  border-radius: 0;
+  margin: 0;
+}
+
+/*===========================*/
+
+.ctn_about_me button p {
+  background-color: #f2f6ff;
+  font-family: 'Anek Tamil', sans-serif;
+  border : 'none';
+  font-size: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter_f 1s steps(40) 1s 1 normal both,
+    blinkTextCursor_f 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter_f {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes blinkTextCursor_f {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

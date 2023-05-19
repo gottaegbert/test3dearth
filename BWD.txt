@@ -1,0 +1,27 @@
+
+Trước khi thi cần test :
+- 3npm  
+- log out
+- Kiểm tra wifi 
+- Kiểm tra upload 
+- Chuẩn bị bài post để đăng 
+- Chuẩn bị bài project để đăng 
+
+
+- Ảnh trắng 
+- mess
+- sửa nd trong input
+
+- kiểm tra all nội dung
+- Mã QR
+- Làm no post (phân trang)
+
+
+
+
+
+
+
+
+
+

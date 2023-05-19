@@ -1,0 +1,579 @@
+    <header>
+        <div class="the_left_nav">
+          <div class="logo">
+              <img src="img/img_logo/logo.jpg" alt="">
+          </div>
+          <div class="search">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input type="text" placeholder="Search...">
+          </div> 
+        </div>
+        <div class="the_center_nav">
+            <a id="homepage" class="fa-solid fa-house icon 1"></a>
+            <a id="product" class="fa-solid fa-earth-americas icon 2"></a>
+            <a id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+
+        </div>
+        <div class="the_right_nav">
+            <div class="login_nav">
+                <i class="fa-solid fa-right-to-bracket icon"></i>
+                <a href="Login" style="text-decoration: none;">Login</a>
+            </div>    
+        </div>     
+
+{{!-- RES_MOBILE --}}
+        <div class="bars">
+            <i class="ti-menu" onclick=open_nav_mobile()></i>
+        </div>    
+        <div class="nav_mobile">
+            <div class="close" onclick=close_nav_mobile()>
+                <i class="ti-close">
+                    
+                </i>
+                Close
+            </div>
+            <div class="homepage" style="padding: 20px;">
+                <a id="homepage" class="fa-solid fa-house icon 1" style="padding: 0 10px;" href="homepage">
+                </a>
+                <a href="homepage">
+                    HOME
+                </a>
+            </div>
+            <div class="product" style="padding: 20px;">
+                <a id="product" class="fa-brands fa-atlassian icon 2" style="padding: 0 10px;" href="product">
+                </a>
+                <a href="product">
+                    POSTS
+                </a>
+            </div>
+            <div class="projects" style="padding: 20px;">
+                <a id="projects" class="fa-solid fa-earth-americas icon 3" style="padding: 0 10px;" href="detail">
+                </a>
+                <a href="detail">
+                    PROJECTS
+                </a>
+            </div>
+        </div>
+{{!-- RES_MOBILE --}}
+    </header>
+
+    <div class="introduce__web">
+        <div class="ctn__content">
+            <h1 class="content__title">
+                Welcome to PRO4
+            </h1>
+            <pre>
+A place to call for crowdfunding 
+promote potential and creativity projects
+            </pre>
+            <div class="btn" style="padding: 0 20%;text-align: left;">
+
+                <button style="font-size: 16px; padding: 15px; background-color: black; color : white; border-radius: 28px;font-weight: 600;">GO TO FUNDRAISE</button>
+            </div>
+        </div>
+ 
+        <div class="ctn__image">
+            <img src="img/imghome/z3376126787751_61175d6aeb38e9828c719e0993ef2f15.jpg" alt="">
+        </div>
+    </div>
+
+{{!-- RES_MOBILE --}}
+    <div class="introduce__web-mobile">
+        <div class="ctn__content-mobile">
+            <h1 class="content__title-mobile">
+                Welcome to PRO4
+            </h1>
+            <p>
+                A place to call for crowdfunding
+            promote potential and creativity projects
+            </p>
+        </div>
+    </div>
+    <div class="space_1" style="height: 500px;width: 100%;">
+        
+    </div>
+{{!-- DONE_RES_MOBILE --}}
+    <div class="our_impact">
+        <h1>Our Impact</h1>
+        <div class="card">
+            <div class="form_card">
+                <img src="img/imghome/project_fund.webp" alt="">
+                <h1>125</h1>
+                <p>Projects funded</p>
+            </div>
+            <div class="form_card">
+                <img src="img/imghome/money.webp" alt="">
+                <h1>$1,170,203</h1>
+                <p>Total amount invested</p>
+            </div>
+            <div class="form_card">
+                <img src="img/imghome/supporter.webp" alt="">
+                <h1>21080</h1>
+                <p>Number of supporters</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="space_2" style="height: 500px;width: 100%;">
+        
+    </div>
+
+    <div class="reason_use">
+        <div class="reason_title">
+            <h1>Why should you use PRO4?</h1>
+            <pre>
+Friendly, easy to use, proactive environment for both 
+startups and investors,Easily exchange and cooperate
+            </pre>
+        </div>
+{{!-- reason_title-mobile --}}
+        <div class="reason_title-mobile">
+            <h1>Why should you use PRO4?</h1>
+            <p>
+Friendly, easy to use, proactive environment for both 
+startups and investors,Easily exchange and cooperate
+            </p>
+        </div>
+
+        {{!-- DONE_reason_title-mobile --}}
+        <div class="info_item-1" style="background-color: white;">
+            <img src="img/imghome/financial.webp" alt="">
+            <div class="info_item__content">
+                <h2>Financial credibility and reasonableness</h2>
+                <p>If you do not attract enough capital after the specified time, you will not receive any money, all the money recorded through PRO4's system is returned to the contributor.</p>
+            </div>
+        </div>
+    
+        <div class="info_item-2" style="background-color: white;">
+            <div class="info_item__content">
+                <h2>MISSION</h2>
+                <p>Promoting creativity, incubating potential startups that need funding, creating a learning environment to exchange knowledge and experience for young start-ups</p>
+            </div>
+            <img src="img/imghome/mission4.webp" alt="">
+        </div>
+    
+    </div>
+
+    <div class="highlights">
+        <h1 class="title">Featured projects</h1>
+        <i class="pre_card ti-angle-left" onclick=trans_pre_card()>
+
+        </i>
+        <i class="aft_card ti-angle-right" onclick=trans_aft_card()>
+
+        </i>
+        <div class="card_project">
+            <div class="form_card_project" onclick=open_prj_1() style="background-color: white;">
+                <div>
+                    <img src="img/imghome/project4.avif" alt="">
+                </div>
+                
+                <h1>Cyberpunk Mini Alley - Bookshelf Insert / Booknook</h1>
+                <p>A fully assembled, high-quality handmade bookshelf Insert with a Cyberpunk diorama theme. Includes many personalizable addons.</p>
+                
+            </div>
+            <div class="form_card_project" onclick=open_prj_2() style="background-color: white;">
+                <div>
+
+                    <img src="img/imghome/project5.avif" alt="">
+                </div>
+                <h1>Pruto: Mesh Action Sports Communicator with LED Light</h1>
+                <p>For Skiing, Yachting, Cycling and all Sports Players. Have Fun and Stay Connected, Go Adventure Boldly with Pruto!</p>
+                
+            </div>
+            <div class="form_card_project" onclick=open_prj_3() style="background-color: white;">
+                <div>
+                    <img src="img/imghome/project6.avif" alt="">
+                </div>
+                <h1>Haven Safari: your all-in-one hammock tent</h1>
+                <p>Hang as a hammock | Pitch as a bivy | Patented lay-flat design | Comfort and durability | Making sleep the highlight of camping</p>
+           
+            </div>
+        </div>
+        <!--card-form-2-->
+            <div class="card_project-1">
+                <div class="form_card_project-1" onclick=open_prj_4() style="background-color: white;">
+                    <div>
+                        <img src="img/imghome/project2.avif" alt="">
+
+                    </div>
+                    <h1>The Farm Family Project</h1>
+                    <p>A Fine Art Photobook by Rob MacInnis Featuring 15 Years of Farm Animal Portraits</p>
+                    
+                </div>
+                <div class="form_card_project-1" onclick=open_prj_5() style="background-color: white;">
+                    <div>
+                        <img src="img/imghome/project3.avif" alt="">
+
+                    </div>
+                    <h1>SnackHunter - A magical multiplayer hide-and-seek game</h1>
+                    <p>Enchanted snacks face off against hungry mages! Launch SnackHunter on your PC and join with your friends on your smartphones.</p>
+                    
+           
+                </div>
+                <div class="form_card_project-1" onclick=open_prj_6() style="background-color: white;">
+                    <div>
+                        <img src="img/imghome/project1.avif" alt="">
+
+                    </div>
+                    <h1>Waterproof and soft light ball-POOF LIGHT</h1>
+                    <p>Hold it, like holding the summer moon, but more than the moon to add a soft and gentle.</p>
+                    
+                </div>
+            </div>
+    </div>
+
+    <div class="modal_1" style="overflow: scroll;">
+        <div class="exit" onclick=close_prj_1()>
+            <i class="ti-close">
+                
+            </i>
+        </div>
+        <div class="content">
+            <div class="info_img">
+                <img src="img/imghome/project4.avif" alt="">
+                <p style="font-weight: bold;padding: 10px 0px;">Cyberpunk Mini Alley - Bookshelf Insert / Booknook</p>
+                <p>A fully assembled, high-quality handmade bookshelf Insert with a Cyberpunk diorama theme. Includes many personalizable addons.</p>
+            </div>
+            
+            <div class="info_content">
+                <h2 style="width: 100%">US $ <span>196.096</span><i class="ti-check-box"> 100%</i></h2>
+                <p>Pledged of US$ 10,000 goal</p>
+
+                <ul class="content_details">
+                    <li>Have you fallen in love with the beautiful neon lights of the Cyberpunk world?</li>
+                    <li>Do you want to experience a high-tech, low-life city?</li>
+                    <li>Would you want a piece of this unique world inside your home? </li>
+
+                    <h4> <i class="ti-star"> </i> The Cyberpunk MiniAlley turns this dystopian futuristic world into a reality. Now you can have your very own piece of Cyberpunk diorama in your own home. This beautiful handmade piece sits neatly on any bookshelf and provides the perfect escape into a world unlike any other.  </h4>
+                </ul>
+
+                <button>Details ...</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_2" style="overflow: scroll;">
+        <div class="exit" onclick=close_prj_2()>
+            <i class="ti-close">
+
+            </i>
+        </div>
+        <div class="content">
+            <div class="info_img">
+                <img src="img/imghome/project5.avif" alt="">
+                <p style="font-weight: bold;padding: 10px 0px;">Pruto: Mesh Action Sports Communicator with LED Light</p>
+                <p>For Skiing, Yachting, Cycling and all Sports Players. Have Fun and Stay Connected, Go Adventure Boldly with Pruto!</p>
+            </div>
+            
+            <div class="info_content">
+                <h2 style="width: 100%">US$<span> 288,377</span><i class="ti-check-box"> 100%</i></h2>
+                <p>Pledged of US$ 5,000 goal</p>
+
+                <ul class="content_details">
+                    <li>Real-time hands free conversation</li>
+                    <li>Keep in touch , ultra wide range ,superb sound quality</li>
+                    <li>Prepared for any situation </li>
+
+                    <h4> <i class="ti-star"> </i> Go wild! Have adventures with friends and stay connected no matter how intense the action gets! With Pruto, revolutionize the way you communicate with your companions while enjoying outdoor activities. </h4>
+                </ul>
+
+                <button>Details ...</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_3" style="overflow: scroll;">
+        <div class="exit" onclick=close_prj_3()>
+            <i class="ti-close">
+
+            </i>
+        </div>
+        <div class="content">
+            <div class="info_img">
+                <img src="img/imghome/project6.avif" alt="">
+                <p style="font-weight: bold;padding: 10px 0px;">Haven Safari: your all-in-one hammock tent</p>
+                <p>Hang as a hammock | Pitch as a bivy | Patented lay-flat design | Comfort and durability | Making sleep the highlight of camping . </p>
+            </div>
+            
+            <div class="info_content">
+                <h2 style="width: 100%">$<span> 402,243</span><i class="ti-check-box"> 100%</i></h2>
+                <p>Pledged of $20,000 goal</p>
+
+                <ul class="content_details">
+                    <li>Deluxe insulated air mattress, coated in vegan suede, with adjustable lounge strap. </li>
+                    <li>Quick and easy assembly .</li>
+                    <li>6 large pockets and ridgeline for additional storage , 4 different color options with extra Kickstarter perks! </li>
+
+                    <h4> <i class="ti-star"> </i> As an avid outdoorsman, it was hard to reconcile the fact that every amazing day in the woods, would be punctuated by a miserable night. I designed the Haven Tent with the goal of, making sleep the highlight of camping. </h4>
+                </ul>
+
+                <button>Details ...</button>
+            </div>
+        </div>
+    </div>
+        
+    <div class="modal_4" style="overflow: scroll;">
+        <div class="exit" onclick=close_prj_4()>
+            <i class="ti-close">
+
+            </i>
+        </div>
+        <div class="content">
+            <div class="info_img">
+                <img src="img/imghome/project2.avif" alt="">
+                <p style="font-weight: bold;padding: 10px 0px;">The Farm Family Project</p>
+                <p>A Fine Art Photobook by Rob MacInnis Featuring 15 Years of Farm Animal Portraits </p>
+            </div>
+            
+            <div class="info_content">
+                <h2 style="width: 100%">$<span> 45,412</span><i class="ti-check-box"> 100%</i></h2>
+                <p>Pledged of $10,000 goal</p>
+
+                <ul class="content_details">
+                   
+                    <h4> <i class="ti-star"> </i>The Farm Family Project, will be a book of 42 photographs of farm animal portraiture I've taken over the last 15 years. </h4>
+                    <h4> <i class="ti-star"> </i>Publishing a book will allow more people to see these beautiful animals as I see them, and bring more people into the conversation. </h4>
+                </ul>
+
+                <button><a href="/create_project/the-farm-family-project" style="text-decoration: none;">Details ...</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_5" style="overflow: scroll;">
+        <div class="exit" onclick=close_prj_5()>
+            <i class="ti-close">
+
+            </i>
+        </div>
+        <div class="content">
+            <div class="info_img">
+                <img src="img/imghome/project3.avif" alt="">
+                <p style="font-weight: bold;padding: 10px 0px;">SnackHunter - A magical multiplayer hide-and-seek game</p>
+                <p> Enchanted snacks face off against hungry mages! Launch SnackHunter on your PC and join with your friends on your smartphones. </p>
+            </div>
+            
+            <div class="info_content">
+                <h2 style="width: 100%">$<span> 3,481 </span><i class="ti-check-box"> 100%</i></h2>
+                <p>Pledged of $3,154 goal</p>
+
+                <ul class="content_details">
+                    <li>SnackHunter offers an easy-to-use multiplayer system. </li>
+                    <li>Free to use , up to 16 friends can play together without any problems since not everyone has to buy the game.</li>
+                    <h4> <i class="ti-star"> </i>SnackHunter là một trò chơi trốn tìm nhiều người chơi đầy thú vị và kỳ diệu! Tham gia vào đội Thợ săn ma thuật và đuổi theo thức ăn bỏ chạy của bạn hoặc trở thành một Snack mê hoặc và trốn khỏi những pháp sư đói. </h4>
+                </ul>
+
+                <button>Details ...</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_6" style="overflow: scroll;">
+        <div class="exit" onclick=close_prj_6()>
+            <i class="ti-close">
+
+            </i>
+        </div>
+        <div class="content">
+            <div class="info_img">
+                <img src="img/imghome/project1.avif" alt="">
+                <p style="font-weight: bold;padding: 10px 0px;">Waterproof and soft light ball-POOF LIGHT</p>
+                <p>Hold it, like holding the summer moon, but more than the moon to add a soft and gentle.</p>
+            </div>
+            
+            <div class="info_content">
+                <h2 style="width: 100%">$<span> 3,481 </span><i class="ti-check-box"> 100%</i></h2>
+                <p>Pledged of $3,154 goal</p>
+
+                <!-- <ul class="content_details">
+                    <li>SnackHunter offers an easy-to-use multiplayer system. </li>
+                    <li>Free to use , up to 16 friends can play together without any problems since not everyone has to buy the game.</li>
+                    <h4> <i class="ti-star"> </i>SnackHunter là một trò chơi trốn tìm nhiều người chơi đầy thú vị và kỳ diệu! Tham gia vào đội Thợ săn ma thuật và đuổi theo thức ăn bỏ chạy của bạn hoặc trở thành một Snack mê hoặc và trốn khỏi những pháp sư đói. </h4>
+                </ul> -->
+
+                <button>Details ...</button>
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="../Login/signup.html" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+{{!-- res footer --}}
+
+    {{!---------------res_footer-------------------}}
+        <div class="ctn__footer-mobile">
+            <div class="footer__colum f__strart">
+                <a href="../Login/signup.html" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="../Login/login.html">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctn__loading__body">
+        <div class="ctn__loading" style="background-image: url(Logo/PRO4-logos_black.png);">
+            <div class="ctn__loading__content">
+                
+            </div>
+        </div>
+    </div>
+        <!-- To top btn -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+        <!-- end top btn -->
+
+    <img class="background_img" src="img/imghome/img_background/home-bck-img-2.svg" alt="" style="position:absolute;top: 0;left: 0;z-index: -1;">
+
+    <img class="background_img" src="img/imghome/img_background/home-bck-img-2.svg" alt="" style="position:absolute;top: 1000px;right: 0;z-index: -1;transform: rotate(180deg);">
+
+    <img class="background_img" src="img/imghome/img_background/home-bck-img-2.svg" alt="" style="position:absolute;top: 2000px;left: 0;z-index: -1;transform: rotate(0deg);">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/homepage.js">
+
+        
+    </script>

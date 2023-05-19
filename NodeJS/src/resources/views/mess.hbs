@@ -1,0 +1,302 @@
+    <header>
+        <div class="nav_pc">
+            <div class="the_left_nav">
+          <div class="logo">
+              <img src="img/img_logo/logo.jpg" alt="">
+          </div>
+            <div class="search" onclick=handle_search()>
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input type="text" id="filter" placeholder="Search...">
+                <ul class="search-drop">
+                        <i class="fa-solid fa-xmark search_close " onclick=close1()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="#"> Loading..... </a> 
+                            </li>
+                        </div> 
+                    </ul> 
+            </div> 
+            </div>
+            <div class="the_center_nav">
+                <a href="homepage" id="homepage" class="fa-solid fa-house icon 1"></a>
+                <a href="product" id="product" class="fa-solid fa-earth-americas icon 2"></a>
+                <a href="detail" id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+            </div>
+            <div class="the_right_nav" onclick=handle_user()>
+                <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}}
+                    <i class="fa-solid fa-sort-down icon"></i>
+                </p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="#"> Statistic </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>  
+            </div>
+        </div>     
+        <div class="mobile_nav">
+            <div class="navtren">
+                    <div class="logo">
+                        <p>PRO4</p>
+                    </div>
+                     <div class="search">
+                        <i class="fa-solid fa-magnifying-glass icon tk"></i>
+                    </div> 
+             </div>   
+             <div class="navduoi">
+                  <div class="the_center_nav">
+                    <a id="homepage_mobile" class="fa-solid fa-house icon 1"></a>
+                    <a id="product_mobile" class="fa-solid fa-earth-americas icon 2"></a>
+                    <a id="projects_mobile" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+                 </div>
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+             </div>   
+        </div>   
+        <input type="checkbox" name="" hidden="true" class="nav__input" id="nav-mobile-input">
+        <label for="nav-mobile-input"  class="nav_overlay"></label>
+        <ul class="mobile_nav_drop">
+           <label for="nav-mobile-input"><i class="fa-solid fa-xmark nav_mobile_close"></i> </label>
+           <div class="menu_mobile">
+               <a href="Game"> <li class="menu-game">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>Game</span>
+                </li>
+                </a>
+                <a href="App"><li class="menu-app">
+                    <i class="fa-brands fa-app-store icon"></i>
+                    <span>App</span>
+                </li>
+                </a>
+               <a href="Ai"> <li class="menu-AI">
+                    <i class="fa-solid fa-robot icon"></i>
+                    <span>AI</span>
+                </li>
+                </a>
+                <a href="costume"><li class="menu-costume">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <span>Costume</span>
+                </li>
+                </a>    
+                <a href="ecommerce"> <li class="menu-ecommerce">
+                    <i class="fa-brands fa-shopify icon"></i>
+                    <span>Ecommerce</span>
+                </li>
+                </a>
+                <a href="create">
+                    <li class="post">
+                        <p>Post Project</p>
+                    </li>
+                </a>
+            </div> 
+            <li class="mode-mobile">
+                <div class="moon-sun_mobile">
+                    <i class="fa-solid fa-moon moon_mobile "></i>
+                    <i class="fa-solid fa-sun sun_mobile"></i>
+                </div>
+                <span class="mode-text_mobile">Dark Mode</span>
+                <div class="toggle-switch_mobile">
+                    <span class="switch_mobile"></span>
+                </div>
+            </li>
+        </ul>        
+    </header>
+
+    <div class="main_page">
+
+        <div class="container">
+            <div class="leftSide">
+                {{!-- header --}}
+                 <div class="header">
+                     <div class="userimg">
+                        <img src="{{users.img_author}}" alt="" class="cover">
+                     </div>
+                     <ul class="nav_icons">
+                        <li><ion-icon name="scan-circle-outline" class="close_open_user" onclick=close_user()></ion-icon></li>
+                        <li><ion-icon name="chatbox"></ion-icon></li>
+                        <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                     </ul>
+                 </div>
+                 {{!-- search  --}}
+                 <div class="search_chat">
+                    <div>
+                        <input type="text" placeholder="Search or start new chat">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                 </div>
+                 {{!-- chat list  --}}
+                 <div class="chatlist">
+                    <div class="block active">
+                        <div class="imgbx">
+                            <img src="https://nghesiviet.vn/storage/files/7/phamthanhhung/tieu-su-shark-hung3-768x768.jpg" alt="" class="cover">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h5> Phạm Thanh Hưng </h5>
+                                <p class="time">4:23</p>
+                            </div>
+                            <div class="message_p">
+                                <p> ok, i will get invest $3000 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block active">
+                        <div class="imgbx">
+                            <img src="https://aphoto.vn/wp-content/uploads/2019/02/hinh8-19.jpg" alt="" class="cover">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h5> Trường Giang </h5>
+                                <p class="time">10:56</p>
+                            </div>
+                            <div class="message_p">
+                                <p>hello, how to investment for you? </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="block unread">
+                        <div class="imgbx">
+                            <img src="https://nld.mediacdn.vn/thumb_w/540/2020/5/29/doi-hoa-tim-8-15907313395592061395682.png" alt="" class="cover">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h5> Trần Hoàng </h5>
+                                <p class="time">11:00</p>
+                            </div>
+                            <div class="message_p">
+                                <p> Hi, Can i invest for you $50000 </p>
+                                <b>2</b>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="block active">
+                        <div class="imgbx">
+                            <img src="https://d1hjkbq40fs2x4.cloudfront.net/2016-01-31/files/1045.jpg" alt="" class="cover">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h5> Đức Hiếu </h5>
+                                <p class="time">10:56</p>
+                            </div>
+                            <div class="message_p">
+                                <p>hello, how to investment for you? </p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="block active">
+                        <div class="imgbx">
+                            <img src="https://baoquocte.vn/stores/news_dataimages/dieulinh/012020/29/15/nhung-buc-anh-dep-tuyet-voi-ve-tinh-ban.jpg" alt="" class="cover">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h5> Trần Khang </h5>
+                                <p class="time">5:25</p>
+                            </div>
+                            <div class="message_p">
+                                <p>Hi, are you ok? can i help you today </p>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="block active">
+                        <div class="imgbx">
+                            <img src="https://znews-photo.zingcdn.me/w660/Uploaded/mdf_eioxrd/2021_07_12/2.jpg" alt="" class="cover">
+                        </div>
+                        <div class="details">
+                            <div class="listHead">
+                                <h5> Bill Gate </h5>
+                                <p class="time">3:00</p>
+                            </div>
+                            <div class="message_p">
+                                <p>hello, how to investment for you? </p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="rightSide">
+                 <div class="header" style="display: flex;justify-content: left;">
+                    <button onclick=open_user() style="display: none;margin-right: 20px;;border-radius: 50%;"><i style="font-size: 20px;padding: 10px;" class="fa-solid fa-user-plus"></i></button>
+
+                     <div class="imgText">
+                        <div class="userimg">
+                            <img src="https://nghesiviet.vn/storage/files/7/phamthanhhung/tieu-su-shark-hung3-768x768.jpg" alt="" class="cover">
+                        </div>
+                        <h4> Phạm Thanh Hưng <br> <span> Online </span> </h4>
+                     </div>
+                     {{!-- <ul class="nav_icons">
+                        <li> <ion-icon name="search-outline"></ion-icon></li>
+                        <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                     </ul> --}}
+                 </div>
+
+
+                 <div class="chatBox">
+                        <div class="message my_message">
+                            <p>Hi <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message frnd_message">
+                            <p>Hello <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message my_message">
+                            <p>can i help you <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message frnd_message">
+                            <p> I think your project has a lot of potential <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message frnd_message">
+                            <p> i want invest for you <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message my_message">
+                            <p> how wonderful!! <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message my_message">
+                            <p> you can invest in the project and get a percentage <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message frnd_message">
+                            <p> I want to invest $3000 <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message frnd_message">
+                            <p> how much % will i get <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message my_message">
+                            <p> you will get 30% profit <br> <span>12:15</span></p> 
+                        </div>
+                        <div class="message frnd_message">
+                            <p> ok, i will get invest $3000 <br> <span>12:15</span></p> 
+                        </div>
+                    </div>
+                    <div class="chatbox_input">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <ion-icon name="attach-outline"></ion-icon>
+                        <input type="text" placeholder="Type a message">
+                        <ion-icon name="mic"></ion-icon>
+                    </div>        
+                </div>
+            </div>
+    </div>    
+
+
+       <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/scriptproduct.js"></script>

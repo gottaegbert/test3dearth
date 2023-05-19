@@ -1,0 +1,36 @@
+
+
+
+/*-----------------------handle_block_up_del*/
+
+ .update-drop {
+    display: none;
+    background-color: white;
+
+  }
+
+ .update-drop.open_up_del{
+    display: flex;
+  }
+
+ .update-drop li{
+    padding: 10px 20px;
+    box-shadow: 0 1px 2px 2px #9e9e9e91; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

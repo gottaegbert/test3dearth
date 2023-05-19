@@ -1,0 +1,18 @@
+
+.content_loading{
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9CDDE6;
+    border-radius: 100px;
+    filter: blur(100px);
+}
+
+.loading_image{
+    height: 250px;
+    z-index: 5;
+    opacity: 1;
+}

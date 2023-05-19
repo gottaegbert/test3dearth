@@ -1,0 +1,355 @@
+    <header>
+        <div class="the_left_nav">
+          <div class="logo">
+              <img src="../img/img_logo/logo.jpg" alt="">
+          </div>
+          <div class="search">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input type="text" placeholder="Search...">   
+          </div> 
+        </div>
+        <div class="the_center_nav">
+            <a href="../homepage" id="homepage" class="fa-solid fa-house icon 1" style="color: #727272;"></a>
+            <a href="../product" id="product" class="fa-solid fa-earth-americas icon 2" style="color: #727272;"></a>
+            <a href="../detail" id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="color: #727272;font-size: 28px;"></a>
+
+        </div>
+        <div class="the_right_nav" onclick=handle_user()>
+           <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}}
+                    <i class="fa-solid fa-sort-down icon"></i>
+                </p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="/wallet"> Wallet </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>  
+        </div>     
+        <div class="bars">
+            <i class="ti-menu" onclick=open_nav_mobile()></i>
+        </div>    
+        <div class="nav_mobile">
+            <div class="close" onclick=close_nav_mobile()>
+                <i class="ti-close">
+                    
+                </i>
+                Close
+            </div>
+            <div class="homepage" style="padding: 20px;">
+                <a id="homepage" class="fa-solid fa-house icon 1" style="padding: 0 10px;" href="homepage">
+                </a>
+                <a href="homepage">
+                    HOME
+                </a>
+            </div>
+            <div class="product" style="padding: 20px;">
+                <a id="product" class="fa-brands fa-atlassian icon 2" style="padding: 0 10px;" href="product">
+                </a>
+                <a href="product">
+                    POSTS
+                </a>
+            </div>
+            <div class="projects" style="padding: 20px;">
+                <a id="projects" class="fa-solid fa-earth-americas icon 3" style="padding: 0 10px;" href="detail">
+                </a>
+                <a href="detail">
+                    PROJECTS
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="ctn_main_prj">
+        <div style="width: 90%;">
+            <div class="prj_video_img">
+                <div class="main_prj_video" style="background-image: url(../../img/imgproject/{{project.img_big}});">
+                    
+                </div>
+                
+            </div>
+
+            <div class="main_prj_content">
+                <h5 style="color: #427fb8;padding: 10px 0;">FUNDING
+                </h5>
+                <h2 style="color : black;font-weight: bold;">{{project.main_title}}</h2>
+                <h4 style="padding: 20px 0;">{{project.main_content}}</h4>
+                <div class="ctn_statistic">
+                    <div class="ctn_pledged_backers">
+                        <div class="pledged">
+                            $<span>0</span>
+                            <div class="title">pledged of $ {{project.title_money_pledged}} goal</div>
+                        </div>
+                        <div class="backers">
+                            <span>0</span>
+                            <div class="title">backers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="complete_figures">
+                    <div class="complete">
+
+                    </div>
+                </div>
+                <div class="percent_complete">
+                    <span>0</span> % of ${{project.title_money_pledged}}
+                </div>
+                <div class="form_donate">
+                    <button class="support_this">
+                        SUPPORT THIS
+                    </button>
+                    <button class="follow">
+                        FOLLOW
+                    </button>
+                    <div class="ctn_social">
+                        <i class="fa-brands fa-facebook" style="color: #39579a"></i>
+                        <i class="fa-brands fa-telegram" style="color: #38b3f1;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctn_content_detail_prj">
+        <div class="header_detail_prj">
+            <div class="story" onclick=open_story()>
+                Story
+            </div>
+            <div class="FAQ" onclick=open_FAQ()>
+                FAQ
+            </div>
+            <div class="comments" onclick=open_comments()>
+                Comments
+            </div>
+            <div class="statistic" onclick=open_statistic()>
+                Statistic
+            </div>
+        </div>
+        <div class="body_detail_prj">
+            <div class="left_body_prj">
+                <div class="connect">
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <p>
+                        PRO4 connects creators with backers to fund projects.
+                    </p>
+                </div>
+                <div class="easy">
+                    <i class="fa-brands fa-stack-exchange"></i>
+                    <p>
+                        Easy exchange environment for startups.
+                    </p>
+                </div>
+                <div class="target">
+                    <i class="fa-solid fa-comments-dollar" style="color: rgb(134, 134, 100);"></i>
+                    <p>
+                        You’re only charged if the project meets its funding goal by the campaign deadline.
+                    </p>
+                </div>
+            </div>
+            <div class="right_body_prj">
+
+                <div class="block_story open">
+                    <h1>Story</h1>
+                
+                    {{#each story}}
+                        <div>
+                            <div class="img_story" style="background-image: url(../../img/imgproject/{{this.image1}});"></div>
+                            <h2>{{this.title1}}</h2>
+                            <div class="img_story" style="background-image: url(../../img/imgproject/{{this.image2}});"></div>
+
+                            <p>{{this.content1}}</p>
+                            <p>{{this.content2}}</p>
+                            <h2>{{this.title2}}</h2>
+                            <p>{{this.content3}}</p>
+                            <div class="img_story" style="background-image: url(../../img/imgproject/{{this.image3}});"></div>
+                            <div class="img_story" style="background-image: url(../../img/imgproject/{{this.image4}});"></div>
+
+                            <p>{{this.content4}}</p>
+                            <p>{{this.content5}}</p>
+                            <div class="img_story" style="background-image: url(../../img/imgproject/{{this.image5}});"></div>
+
+                        </div>
+                    {{/each}}
+
+                </div>
+
+                <div class="block_FAQ">
+                    <h1>Frequently Asked Questions</h1>
+                    
+                    {{#each question}}
+                    <div class="bl_FAQ_question">
+                        <div class="bl_question">                            
+                            <div style="font-size: 20px;">
+                                {{this.question}}
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+
+                </div>
+
+                <div class="block_comments">
+                    <h1>Comment</h1>
+                    <div class="comment_action">
+                        <div style="display: flex;flex-direction: row;">
+                            
+                            <i class="fa-solid fa-photo-film img_comment" style="color: #319545"></i>
+
+                            <i class="fa-solid fa-face-grin-squint status_comment" style="color: #d2a32d"></i>
+                            <form method="POST" style="width: 100%;" action="/create_project/save_comment">
+                                <label for="comment"></label>
+                                <input name="comment" id="comment" style="width: 80%;" type="text" class="in_cmt" placeholder="Viết bình luận vào đây . ">
+                                <button class="submit_comment">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    {{#each prj_cmt}}
+                    <div style="margin: 30px 0;padding: 20px;border: 2px solid rgb(188, 172, 172)">
+                        <div class="cmt_info">
+                            <div class="cmt_avatar">
+                                <img src={{this.avatar}} alt="">
+                            </div>
+                            <div class="cmt_name">
+                                {{this.name}}
+                            </div>
+                        </div>
+                        <div class="cmt_content">
+                                {{this.comment}}
+                        </div>
+                    </div>
+                    {{/each}}
+
+                    
+                </div>
+
+                <div class="block_statistic">
+                    <div class="line_statistic">
+                        <h2 style="margin: 20px 0;"><i class="fa-solid fa-sun" style="margin: 0 10px;"></i> INTERACTIVE</h2>
+                        <div style="width: 100%;">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <h2 style="margin: 40px 0;"><i class="fa-solid fa-sun" style="margin: 0 10px;"></i> CASH FLOW</h2>
+                        <div style="width: 100%;">
+                            <canvas id="myChart_2"></canvas>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="block_end">
+                    <p>Looking for more information ? Check the project <a href="" style="color: #05ce78;">FAQ</a> <i class="fa-solid fa-clipboard-question"></i> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="signup" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+  
+
+       <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="js/post_project_created.js"></script>
+    <script src="js/create_project.js"></script>

@@ -1,0 +1,371 @@
+/* -------------page---------- */
+.page {
+  background-image: var(--color-page-product);
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+/*--------------------------------- the right page------------------------ */
+.the_right_page {
+  margin-top: 6%;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.ranking {
+  font-weight: bold;
+  color: var(--text-the_left_page-color);
+  margin-top: 10px;
+}
+.investor_rankings {
+  position: fixed;
+  width: 27%;
+}
+.Investor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.Investor {
+  display: flex;
+  margin-left: 9%;
+  /* margin-top:10%; */
+  font-size: 16px;
+}
+
+/*handle profile of user */
+/*hoang*/
+.Investor .profile_tran_hoang {
+  width: 0px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Investor:hover .profile_tran_hoang {
+  cursor: pointer;
+  margin: 0 20px;
+  animation-name: trans_options;
+  animation-duration: 2s;
+  animation-direction: normal;
+  width: 100px;
+  opacity: 1;
+}
+
+.Investor .profile_tran_hoang i:hover {
+  background-color: #b5e1c4;
+  border-radius: 5px;
+  box-shadow: 0 0px 1px 1px #9e9e9e91;
+}
+
+/*hung*/
+.Investor .profile_hung {
+  width: 0px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Investor:hover .profile_hung {
+  cursor: pointer;
+  margin: 0 20px;
+
+  animation-name: trans_options;
+  animation-duration: 2s;
+  animation-direction: normal;
+  width: 100px;
+  opacity: 1;
+}
+
+.Investor .profile_hung i:hover {
+  background-color: #b5e1c4;
+  border-radius: 5px;
+  box-shadow: 0 0px 1px 1px #9e9e9e91;
+}
+
+/*elon musk*/
+.Investor .profile_elon_musk {
+  width: 0px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Investor:hover .profile_elon_musk {
+  cursor: pointer;
+  margin: 0 20px;
+
+  animation-name: trans_options;
+  animation-duration: 2s;
+  animation-direction: normal;
+  width: 100px;
+  opacity: 1;
+}
+
+.Investor .profile_elon_musk i:hover {
+  background-color: #b5e1c4;
+  border-radius: 5px;
+  box-shadow: 0 0px 1px 1px #9e9e9e91;
+}
+
+@keyframes trans_options {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  100% {
+    opacity: 1;
+    width: 100px;
+  }
+}
+
+.the_right_page li {
+  list-style: none;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.the_right_page li:hover {
+  background-color: var(--nav-center-icon-color);
+  cursor: pointer;
+}
+
+.Investor span {
+  color: var(--text-the_left_page-color);
+}
+.infor_Investor {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Top_project_fix {
+  position: fixed;
+}
+
+.Top_project {
+  margin-top: 10px;
+  top: 48%;
+}
+
+.Project {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.Project:hover,
+.Project:active {
+  cursor: pointer;
+  background-color: var(--nav-center-icon-color);
+  padding: 5px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.Project img {
+  width: 130px;
+  border-radius: 10%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 2px 4px 1px var(--shadow-header-color);
+}
+.Project span {
+  font-size: 16px;
+  color: var(--text-the_left_page-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-the_left_page-color);
+}
+
+/*comment*/
+.ctn_comment {
+  display: none;
+}
+
+.ctn_comment .bl__ctn_comment {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 0;
+}
+
+.ctn_comment .avatar {
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ctn_comment .bl__ctn_comment form {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.bl__ctn_comment input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  border: 2px solid rgb(122, 122, 122);
+}
+
+.bl__ctn_comment button {
+  height: 40px;
+  font-size: 25px;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  background-color: white;
+  border: none;
+}
+
+.bl__ctn_comment button:hover {
+  cursor: pointer;
+}
+
+.ctn_comment.open_cmt {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  /* display: unset; */
+}
+
+/*comment_1*/
+.ctn_comment_1 {
+  display: none;
+}
+
+.ctn_comment_1 .bl__ctn_comment_1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+.ctn_comment_1 .avatar {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ctn_comment_1 input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+}
+
+.ctn_comment_1.open_cmt {
+  display: flex;
+  justify-content: center;
+}
+
+/*comment_2*/
+.ctn_comment_2 {
+  display: none;
+}
+
+.ctn_comment_2 .bl__ctn_comment_2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+.ctn_comment_2 .avatar {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ctn_comment_2 input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+}
+
+.ctn_comment_2.open_cmt {
+  display: flex;
+  justify-content: center;
+}
+
+.center_page {
+  min-height: 100vh;
+}
+
+/*-------------------------------------page_product_not_data----------------------------------*/
+.page_product_not_data {
+  display: none;
+}
+
+.page_product_not_data.open_ms_soon {
+  position: fixed;
+  z-index: 4;
+  top: 30%;
+  left: 25%;
+  height: 30%;
+  width: 50%;
+  background-color: #dae8de;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-des span {
+  cursor: pointer;
+  color: var(--text-readmore);
+  /* font-weight: 580; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.info-des span:hover {
+  text-decoration: underline;
+}
+.comment {
+  width: 100%;
+}
+.list_comment {
+  margin: 0 30px;
+  overflow-y: scroll;
+  max-height: 130px;
+}
+.list_comment {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.list_comment::-webkit-scrollbar {
+  display: none;
+}
+.comment-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.comment-item + .comment-item {
+  margin-top: 10px;
+}
+.comment-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+.heart.fa-heart.active {
+  color: red !important;
+}

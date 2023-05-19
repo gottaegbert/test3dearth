@@ -1,0 +1,530 @@
+    <header>
+        <div class="nav_pc">
+            <div class="the_left_nav">
+          <div class="logo">
+              <img src="img/img_logo/logo.jpg" alt="">
+          </div>
+            <div class="search" onclick=handle_search()>
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input type="text" id="filter" placeholder="Search...">
+                <ul class="search-drop">
+                        <i class="fa-solid fa-xmark search_close " onclick=close1()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="#"> Loading..... </a> 
+                            </li>
+                        </div> 
+                    </ul> 
+            </div> 
+            </div>
+            <div class="the_center_nav">
+                <a id="homepage" class="fa-solid fa-house icon 1"></a>
+                <a id="product" class="fa-solid fa-earth-americas icon 2"></a>
+                <a id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+            </div>
+            <div class="the_right_nav" onclick=handle_user()>
+                <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}}</p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="#"> Statistic </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>  
+            </div>
+        </div>     
+        <div class="mobile_nav">
+            <div class="navtren">
+                    <div class="logo">
+                        <p>PRO4</p>
+                    </div>
+                     <div class="search">
+                        <i class="fa-solid fa-magnifying-glass icon tk"></i>
+                    </div> 
+             </div>   
+             <div class="navduoi">
+                  <div class="the_center_nav">
+                    <a id="homepage_mobile" class="fa-solid fa-house icon 1"></a>
+                    <a id="product_mobile" class="fa-solid fa-earth-americas icon 2"></a>
+                    <a id="projects_mobile" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+                 </div>
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+             </div>   
+        </div>   
+        <input type="checkbox" name="" hidden="true" class="nav__input" id="nav-mobile-input">
+        <label for="nav-mobile-input"  class="nav_overlay"></label>
+        <ul class="mobile_nav_drop">
+           <label for="nav-mobile-input"><i class="fa-solid fa-xmark nav_mobile_close"></i> </label>
+           <div class="menu_mobile">
+               <a href="Game"> <li class="menu-game">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>Game</span>
+                </li>
+                </a>
+                <a href="App"><li class="menu-app">
+                    <i class="fa-brands fa-app-store icon"></i>
+                    <span>App</span>
+                </li>
+                </a>
+               <a href="Ai"> <li class="menu-AI">
+                    <i class="fa-solid fa-robot icon"></i>
+                    <span>AI</span>
+                </li>
+                </a>
+                <a href="costume"><li class="menu-costume">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <span>Costume</span>
+                </li>
+                </a>    
+                <a href="ecommerce"> <li class="menu-ecommerce">
+                    <i class="fa-brands fa-shopify icon"></i>
+                    <span>Ecommerce</span>
+                </li>
+                </a>
+                <a href="create">
+                    <li class="post">
+                        <p>Post Project</p>
+                    </li>
+                </a>
+            </div> 
+            <li class="mode-mobile">
+                <div class="moon-sun_mobile">
+                    <i class="fa-solid fa-moon moon_mobile "></i>
+                    <i class="fa-solid fa-sun sun_mobile"></i>
+                </div>
+                <span class="mode-text_mobile">Dark Mode</span>
+                <div class="toggle-switch_mobile">
+                    <span class="switch_mobile"></span>
+                </div>
+            </li>
+        </ul>        
+    </header>
+
+    <div class="page">
+        <ul class="the_left_page letf_page">
+           <div class="menu">
+               <a href="create"> <li class="menu-create">
+                    <i class="fa-solid fa-file-export" style="font-size: 20px;margin-right: 15px;"></i>
+                    <span>POST PROJECT</span>
+                </li>
+                </a>
+                <a href="me"> <li class="menu-me">
+                    <i class="fa-solid fa-calendar" style="font-size: 20px;margin-right: 15px;"></i>
+                    <span>MY PROJECT</span>
+                </li>
+                </a>
+               <a href="Game"> <li class="menu-game">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>Game</span>
+                </li>
+                </a>
+                <a href="App"><li class="menu-app">
+                    <i class="fa-brands fa-app-store icon"></i>
+                    <span>App</span>
+                </li>
+                </a>
+               <a href="Ai"> <li class="menu-AI">
+                    <i class="fa-solid fa-robot icon"></i>
+                    <span>AI</span>
+                </li>
+                </a>
+                <a href="costume"><li class="menu-costume">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <span>Costume</span>
+                </li>
+                </a>    
+                <a href="ecommerce"> <li class="menu-ecommerce">
+                    <i class="fa-brands fa-shopify icon"></i>
+                    <span>Ecommerce</span>
+                </li>
+                </a>
+            </div> 
+            <li class="mode">
+                <div class="moon-sun">
+                    <i class="fa-solid fa-moon moon "></i>
+                    <i class="fa-solid fa-sun sun"></i>
+                </div>
+                <span class="mode-text">Dark Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="center_page">
+             {{#each products}}   
+             <div class="Infor {{this.name}}">
+                    <div class="author">
+                        <img src="{{this.img_author}}" alt="">
+                        <div class="infor_author">
+                            <span>{{this.name_author}}</span>
+                            <p>1m <i class="fa-solid fa-earth-americas icon 3"></i> </p>
+                        </div>
+                    </div>
+                    <div class="info-des">
+                        <p>{{this.infor}}</p>
+                        <div class="img-App">
+                            <img  src="{{this.img1}}" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                <div class="decription">  
+                  <div class="emotion">
+                      <i class="heart fa-heart fa-regular" onclick=handle_heart('{{this.name}}')></i>
+                      <i class="fa-regular fa-comment" onclick=handle_comment('{{this.name}}')></i>
+                      <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <div class="donate-investment">
+                      <a href="donate"><p class="donate">Donate</p></a>
+                      <p class="investment" onclick=handle_mess()>Investment</p> 
+                  </div>   
+                </div>       
+
+                {{!-- update&dele --}}
+                <label for="project-input" class="drop-bars-btn">
+                    <i class="fa-solid fa-bars" onclick=handle_update('{{this.name}}')></i>
+                </label>
+                 <input type="checkbox" name="" hidden="true" class="project__input" id="project-input">
+                <ul class="update-drop">
+                    <label for="project-input" onclick=handle_update('{{this.name}}')><i class="fa-solid fa-xmark project_close " > </i> </label>
+                    <div class="menu_drop">
+                        <li>
+                            <a href="/product/{{this._id}}/edit"> Update </a> 
+                        </li>
+                        <li>
+                            <p id="b4" class="{{this._id}}" onclick=delete_p('{{this._id}}')>Delete</p>
+                        </li>
+                    </div> 
+                </ul>   
+
+                 <!--comment-->
+                <div class="ctn_comment" style="height: 100px;">
+                    <div class="bl__ctn_comment" style="width: 90%;">
+                        <div class="avatar">
+                            
+                        </div>
+                        <input type="text" placeholder="Viết bình luận ... ">
+
+                    </div>
+                </div>
+                <!--end_comment-->    
+
+            </div>
+            {{/each}}          
+        </div>
+
+        <div class="the_right_page">
+                <ul class="investor_rankings">
+                    <p class="ranking"> Investor Rankings </p>
+                    <li class="Investor 1">
+                        <img src="content/277822595_675257793692053_156162619594281754_n.jpg" alt="">
+                        <div class="infor_Investor">
+                            <span>Trần Hoàng</span>
+                            <div class="star">
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Investor 2">
+                        <img src="content/shark-hung-la-ai.jpg" alt="">
+                        <div class="infor_Investor">
+                            <span>Phạm Thanh Hưng</span>
+                           <div class="star">
+                                <i  class="fa-regular fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                           </div>    
+                        </div>
+                    </li>
+                    <li class="Investor 3">
+                        <img src="content/ElonMusk-2017-stageshot-9046-1650013535.jpg" alt="">
+                        <div class="infor_Investor">
+                            <span>Elon Musk</span>
+                           <div class="star">
+                                <i  class="fa-regular fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                           </div>    
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="Top_project Top_project_fix">
+                    <hr>
+                    <p class="ranking"> Top Project</p>
+                    <a href="App"><li class="Project 1">
+                        <img src="content/App/Tích hợp thực tế tăng cường (AR)/Thực tế ảo.jpeg" alt="">
+                        <div class="infor_project">
+                            <span>Tích hợp thực tế tăng cường (AR)</span>
+                        </div>
+                    </li>
+                    </a>
+                    <a href="App">
+                    <li class="Project 2">
+                        <img src="content/App/Công nghệ Beacon/Công nghệ Beacon.jpg" alt="">
+                        <div class="infor_project">
+                            <span>Công nghệ Beacon Sự phát triển</span>
+                          
+                        </div>
+                    </li>
+                    </a>
+                </ul>
+        </div>
+    </div>
+        
+        <div class="the_right_page">
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="../Login/signup.html" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+{{!-- res footer --}}
+
+    {{!---------------res_footer-------------------}}
+    <div class="ctn__footer-mobile">
+        <div class="footer__colum f__strart">
+            <a href="../Login/signup.html" style="border: none;">Get Started</a>
+            <ul>
+                <li><a href="../Login/login.html">Start Fundraise</a></li>
+                <li><a href="#">Investor Signup</a></li>
+                <li><a href="#">Account Login</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__browse">
+            <a href="#">Browse</a>
+            <ul>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Recently</a></li>
+                <li><a href="#">Start-up Magazine</a></li>
+                <li><a href="#">Communities</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__resources">
+            <a href="#">Resources</a>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__legal">
+            <a href="#">Legal</a>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__follow">
+            <a href="#">Follow</a>
+            <ul class="list-follow">
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    <div class="ctn__loading__body">
+        <div class="ctn__loading">
+            <div class="ctn__loading__content">
+                
+            </div>
+        </div>
+    </div>
+
+    {{!-- boxchat --}}
+    <div class="messenger">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </div>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>Chat with PRO4!
+            <i class="fa fa-window-minimize" aria-hidden="true"></i>
+        </button>
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <form method="post" name="delete_form"></form>
+    <!-- To top btn -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <!-- end top btn -->
+
+
+
+       <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="js/scriptproduct.js"></script>

@@ -1,0 +1,666 @@
+    <header>
+        <div class="nav_pc">
+            <div class="the_left_nav">
+            <div class="logo">
+              <img class="logo1" src="img/img_logo/logo.jpg" alt="">
+              <img class="logo2" src="img/img_logo/logo2.jpg" alt="" style="display: none">
+          </div>
+            <div class="search" onclick=handle_search()>
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input  type="text" id="filter" placeholder="Search...">
+                 <ul class="search-drop">
+                        <i class="fa-solid fa-xmark search_close " onclick=close1()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="#"> Loading..... </a> 
+                            </li>
+                        </div> 
+                    </ul> 
+            </div> 
+            </div>
+            <div class="the_center_nav">
+                <a id="homepage" class="fa-solid fa-house icon 1"></a>
+                <a id="product" class="fa-solid fa-earth-americas icon 2"></a>
+                <a id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+            </div>
+            <div class="the_right_nav" onclick=handle_user()>
+                <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}} 
+                    <i class="fa-solid fa-sort-down icon"></i>
+                </p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " onclick=handle_user()> </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="/profile"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="/wallet"> Wallet </a> 
+                            </li>
+                            <li>
+                                <a href="/post_project_created"> Add new project </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>  
+            </div>
+            
+        </div>     
+        <div class="mobile_nav">
+            <div class="navtren">
+                    <div class="logo">
+                        <img class="logo1" src="img/img_logo/logo.jpg" alt="">
+                        <img class="logo2" src="img/img_logo/logo2.jpg" alt="" style="display: none">
+                    </div>
+                     <div class="search">
+                        <i class="fa-solid fa-magnifying-glass icon tk"></i>
+                    </div> 
+             </div>   
+             <div class="navduoi">
+                  <div class="the_center_nav">
+                    <a id="homepage_mobile" class="fa-solid fa-house icon 1"></a>
+                    <a id="product_mobile" class="fa-solid fa-earth-americas icon 2"></a>
+                    <a id="projects_mobile" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+                 </div>
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+             </div>   
+        </div>   
+        <input type="checkbox" name="" hidden="true" class="nav__input" id="nav-mobile-input">
+        <label for="nav-mobile-input"  class="nav_overlay"></label>
+        <ul class="mobile_nav_drop">
+           <label for="nav-mobile-input"><i class="fa-solid fa-xmark nav_mobile_close"></i> </label>
+           <div class="menu_mobile">
+               <a href="Game"> <li class="menu-game">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>Game</span>
+                </li>
+                </a>
+                <a href="App"><li class="menu-app">
+                    <i class="fa-brands fa-app-store icon"></i>
+                    <span>App</span>
+                </li>
+                </a>
+               <a href="Ai"> <li class="menu-AI">
+                    <i class="fa-solid fa-robot icon"></i>
+                    <span>AI</span>
+                </li>
+                </a>
+                <a href="costume"><li class="menu-costume">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <span>Costume</span>
+                </li>
+                </a>    
+                <a href="ecommerce"> <li class="menu-ecommerce">
+                    <i class="fa-brands fa-shopify icon"></i>
+                    <span>Ecommerce</span>
+                </li>
+                </a>
+                <a href="create">
+                    <li class="post">
+                        <p>Post Project</p>
+                    </li>
+                </a>
+            </div> 
+            <li class="mode-mobile">
+                <div class="moon-sun_mobile">
+                    <i class="fa-solid fa-moon moon_mobile "></i>
+                    <i class="fa-solid fa-sun sun_mobile"></i>
+                </div>
+                <span class="mode-text_mobile">Dark Mode</span>
+                <div class="toggle-switch_mobile">
+                    <span class="switch_mobile"></span>
+                </div>
+            </li>
+        </ul>        
+    </header>
+
+    <div class="page">
+        <ul class="the_left_page letf_page">
+           <div class="menu">
+               <a href="create"> <li class="menu-create">
+                    <i class="fa-solid fa-file-export" style="font-size: 20px;margin-right: 15px;"></i>
+                    <span>POST PROJECT</span>
+                </li>
+                </a>
+                <a href="me"> <li class="menu-me">
+                    <i class="fa-solid fa-calendar" style="font-size: 20px;margin-right: 15px;"></i>
+                    <span>MY PROJECT</span>
+                </li>
+                </a>
+               <a href="Game"> <li class="menu-game">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <span>Game</span>
+                </li>
+                </a>
+                <a href="App"><li class="menu-app">
+                    <i class="fa-brands fa-app-store icon"></i>
+                    <span>App</span>
+                </li>
+                </a>
+               <a href="Ai"> <li class="menu-AI">
+                    <i class="fa-solid fa-robot icon"></i>
+                    <span>AI</span>
+                </li>
+                </a>
+                <a href="costume"><li class="menu-costume">
+                    <i class="fa-solid fa-shirt icon"></i>
+                    <span>Costume</span>
+                </li>
+                </a>    
+                <a href="ecommerce"> <li class="menu-ecommerce">
+                    <i class="fa-brands fa-shopify icon"></i>
+                    <span>Ecommerce</span>
+                </li>
+                </a>
+                 <a href="home"> <li class="menu-logout" >
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="font-size: 20px;margin-right: 15px;"></i>
+                    <span>Log out</span>
+                </li>
+                </a>
+            </div> 
+            <li class="mode">
+                <div class="moon-sun">
+                    <i class="fa-solid fa-moon moon "></i>
+                    <i class="fa-solid fa-sun sun"></i>
+                </div>
+                <span class="mode-text">Dark Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="center_page">
+             {{#each products as |product|}}   
+             <div class="Infor {{product.name}}">
+                    <div class="author">
+                        <img src="{{product.img_author}}" alt="">
+                        <div class="infor_author">
+                            <span>{{product.name_author}}</span>
+                            <p>1m <i class="fa-solid fa-earth-americas icon 3"></i> </p>
+                        </div>
+                    </div>
+                    <div class="info-des">
+                        <p>{{product.infor}}</p>
+                        <div class="img-App">
+                            <img  src="{{product.img1}}" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                <div class="decription">  
+                  <div class="emotion">
+                      <i class="heart fa-heart fa-regular" onclick=handle_heart('{{product.name}}')></i>
+                      <i class="fa-regular fa-comment" onclick=handle_comment('{{product.name}}')></i>
+                      <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <div class="donate-investment">
+                      <a href="donate"><p class="donate">Donate</p></a>
+                      <a href="mess" class="investment">Investment</a> 
+                  </div>   
+                </div>       
+
+                 <!--comment-->
+                <div class="ctn_comment" style="height: 100px;">
+                    <div class="bl__ctn_comment" style="width: 90%;">
+                        <img class="avatar" src="">
+
+                        </img>
+                        <form action="">
+                            <input type="text" placeholder="Write a comment ... ">
+                            <button><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <!--end_comment-->    
+
+             </div>
+            {{/each}}
+             <div class="Infor AI">
+                    <div class="author">
+                        <img src="content/AI/author/242671915_948353739079553_3477742332105636451_n.jpg" alt="">
+                        <div class="infor_author">
+                            <span>Trần Văn Khang</span>
+                            <p>1h <i class="fa-solid fa-earth-americas icon 3"></i> </p>
+                        </div>
+                    </div>
+                    <div class="info-des">
+                        <p>Dự án được thực hiện bởi team Pro4! </p>
+                        <p>Giới thiệu sơ lược:</p>
+                        <p>Smart Edge là giải pháp phân tích video đa vật thể, áp dụng mô hình học sâu để biến đổi các camera và các thiết bị kiểm soát quyền truy cập thông thường thành những hệ thống thông minh. Sản phẩm cho phép chuyển đổi hình ảnh thành thông tin chi tiết hữu ích để tạo ra các giá trị kinh doanh cho doanh nghiệp. Đặc biệt, áp dụng mô hình học sâu, sản phẩm có thể nhận diện khuôn mặt ổn định, kể cả khi người dùng đang sử dụng khẩu trang. Ngoài mục đích thương mại, với dòng sản phẩm này, VinAI hi vọng có thể chung tay bảo vệ sức khỏe cộng đồng trong bối cảnh đại dịch còn đang diễn biến phức tạp.</p>
+                        <div class="img">
+                            <div class="img1">
+                                <img class="item1" src="content/AI/Smart Edge/Smart Edge.png" alt="">
+                                <img class="item2" src="content/AI/Smart Mobility/Hình/Smart Mobility1.jpg" alt="">
+                            </div>
+                            <img class="item3" src="content/AI/Smart Mobility/Hình/Smart Mobility2.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                <div class="decription">  
+                  <div class="emotion">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-comment comment   " onclick=click_cmt()></i>
+                      <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <div class="donate-investment">
+                      <a href="donate"><p class="donate">Donate</p></a>
+                      <p class="investment">Investment</p> 
+                  </div>   
+                </div>     
+
+                <!--comment-->
+                <div class="ctn_comment" style="height: 100px;">
+                    <div class="bl__ctn_comment" style="width: 90%;">
+                        <img class="avatar" src="{{users.img_author}}">
+                        
+                        </img>
+                        <input type="text" placeholder="Viết bình luận ... ">
+
+                    </div>
+                </div>
+                <!--end_comment-->    
+             </div>
+                 <div class="Infor Game">
+                    <div class="author">
+                        <img src="content/Game/author/14720536_1797565987159824_7956249866022643798_n_njek.jpg" alt="">
+                        <div class="infor_author">
+                            <span>Trực tiếp game</span>
+                            <p>5h <i class="fa-solid fa-earth-americas icon 3"></i> </p>
+                        </div>
+                    </div>
+                    <div class="info-des">
+                        <p>Dự án được thực hiện bởi DUT team </p>
+                        <p>Thần Trùng (The Death) là dự án game kinh dị do DUT Studio (chỉ gồm 3 thành viên) sản xuất, lấy bối cảnh 100% tại Việt Nam. Fanpage studio: <a href="https://www.facebook.com/dutstudiovn"> https://www.facebook.com/dutstudiovn </a>
+                           Trailer game có những hình ảnh rùng rợn, khán giả cân nhắc trước khi xem.
+                           Các nhân vật, tình huống và sự kiện trong video này đều là sản phẩm hư cấu.
+                           Mọi sự trùng hợp nếu có chỉ là ngẫu nhiên. Gameplay, nhân vật và bối cảnh trong trailer có thể sẽ được sửa đổi trong tương lai.
+                           Trong trailer có sử dụng một số hình ảnh tranh cổ động phòng chống dịch COVID - 19 (Bức tranh với thông điệp “Ở nhà là yêu nước” của họa sỹ Lê Đức Hiệp; tranh của họa sĩ Lưu Yên Thế) cùng với bài hát nổi tiếng "Đồi Thông Hai Mộ" của nhạc sĩ Hồng Vân và trình bày bởi ca sĩ Hoàng Oanh.</p>
+                        <div class="video-game">
+                            <video width="100%" controls>
+                              <source src="content/Game/Thần trùng/than-trung-gameplay-trailer-game-kinh-di-viet-nam-vietnam-horror-game-dut-studio-2021.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <hr>
+                <div class="decription">  
+                  <div class="emotion">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-comment comment1" onclick=click_cmt1()></i>
+                      <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <div class="donate-investment">
+                     <a href="donate"> <p class="donate">Donate</p> </a>
+                      <p class="investment">Investment</p> 
+                  </div>   
+                </div>   
+                 <!--comment-->
+                <div class="ctn_comment_1" style="height: 100px;">
+                    <div class="bl__ctn_comment_1" style="width: 90%;">
+                        <img class="avatar" src="{{users.img_author}}">
+                        
+                        </img>
+                        <input type="text" placeholder="Viết bình luận ... ">
+
+                    </div>
+                </div>
+            <!--end_comment-->      
+             </div>
+              <div class="Infor Costume">
+                    <div class="author">
+                        <img src="content/Costume/author/20170417234658-thoi-trang-xuan-he-2017.jpg" alt="">
+                        <div class="infor_author">
+                            <span>Xuân Lê</span>
+                            <p>6h <i class="fa-solid fa-earth-americas icon 3"></i> </p>
+                        </div>
+                    </div>
+                    <div class="info-des">
+                        <p>Trong vài năm trở lại đây, thời trang Việt đã có sự dịch chuyển đến với con đường bền vững. Các nhà thiết kế đã và đang quan tâm nhiều hơn đến các giải pháp giúp cho nền thời trang trở nên thân thiện hơn với môi trường thông qua nhiều hoạt động khác nhau, từ tận dụng chất liệu các loại chất liệu cũ đến sử dụng các phương pháp thiết kế mới, hay quan tâm đến công nghệ… nhằm biến cho sản phẩm thời trang vừa thân thiện với môi trường vừa gần gũi với chọn lựa mua sắm của khách hàng.
+                           Trên hành trình xanh hơn mỗi ngày đó, sự sáng tạo từ các các sinh viên thời trang cho đến các nhà thiết kế Việt thành danh, đã tạo nên những tác phẩm thú vị. Họ đã biến rác thải, vải thừa hay quần áo cũ thành những thiết kế đầy lãng mạn và mộng mơ. Nhà thiết kế Chung Thanh Phong cũng tạo nên trang phục cũng tạo nên những mẫu đầm dạ hội với bao ni lông và vỏ chai nhựa. Không dừng lại ở đó, thương hiệu More Than Blue của Christy tận dụng từng chút vải thừa để ra mắt bộ sưu tập Chắp vá sau những tháng giãn cách xã hội. Ấn tượng hơn với SAND khi biết được rằng SAND Thu Đông đã dùng những mét vải cuối cùng của kho lưu trữ hay bộ sưu tập Reborn của NTK Xuân Lê với sự kêu gọi đóng góp trang phục cũ từ cộng đồng.
+                           Cùng Style-Republik điểm qua những nét ấn tượng từ làn sóng “upcycling” của thời trang Việt.</p>
+                        <div class="img-Costume">
+                            <img class="img_item1" src="content/Costume/Upcycling/ntk-xuan-le-style-reborn-khanh-linh-deponline-01-20210410.jpeg" alt="">
+                           <div class="img-item">
+                            <img class="img_item2" src="content/Costume/Upcycling/ntk-xuan-le-style-reborn-khanh-linh-deponline-02-20210410.jpeg" alt="">
+                            <img class="img_item3" src="content/Costume/Upcycling/ntk-xuan-le-style-reborn-khanh-linh-deponline-05-20210410.jpeg" alt="">
+                           </div>                          
+                        </div>
+                    </div>
+                    <hr>
+                <div class="decription">  
+                  <div class="emotion">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-regular fa-comment comment2" onclick=click_cmt2()></i>
+                      <i class="fa-solid fa-share-nodes"></i>
+                  </div>
+                  <div class="donate-investment">
+                     <a href="donate"> <p class="donate">Donate</p> </a>
+                      <p class="investment">Investment</p> 
+                  </div>   
+                </div> 
+
+                <!--comment-->
+                <div class="ctn_comment_2" style="height: 100px; position: relative;">
+                    <div class="bl__ctn_comment_2" style="width: 90%;">
+                        <img class="avatar" src="{{users.img_author}}">
+                        
+                        </img>
+                        <input type="text" placeholder="Viết bình luận ... ">
+
+                    </div>
+                </div>
+            <!--end_comment-->      
+             </div>
+
+            
+
+            
+        </div>
+
+         <div class="the_right_page">
+                <ul class="investor_rankings">
+                    <p class="ranking"> Investor Rankings </p>
+                    <li class="Investor 1">
+                        <img src="content/277822595_675257793692053_156162619594281754_n.jpg" alt="">
+                        <div class="infor_Investor">
+                            <span>Trần Hoàng</span>
+                            <div class="star">
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Investor 2">
+                        <img src="content/shark-hung-la-ai.jpg" alt="">
+                        <div class="infor_Investor">
+                            <span>Phạm Thanh Hưng</span>
+                           <div class="star">
+                                <i  class="fa-regular fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                           </div>    
+                        </div>
+                    </li>
+                    <li class="Investor 3">
+                        <img src="content/ElonMusk-2017-stageshot-9046-1650013535.jpg" alt="">
+                        <div class="infor_Investor">
+                            <span>Elon Musk</span>
+                           <div class="star">
+                                <i  class="fa-regular fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                                <i style="color:rgb(255, 230, 0)" class="fa-solid fa-star"></i>
+                           </div>    
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="Top_project Top_project_fix">
+                    <hr>
+                    <p class="ranking"> Top Project</p>
+                    <a href="App"><li class="Project 1">
+                        <img src="content/App/Tích hợp thực tế tăng cường (AR)/Thực tế ảo.jpeg" alt="">
+                        <div class="infor_project">
+                            <span>Tích hợp thực tế tăng cường (AR)</span>
+                        </div>
+                    </li>
+                    </a>
+                    <a href="App">
+                    <li class="Project 2">
+                        <img src="content/App/Công nghệ Beacon/Công nghệ Beacon.jpg" alt="">
+                        <div class="infor_project">
+                            <span>Công nghệ Beacon Sự phát triển</span>
+                          
+                        </div>
+                    </li>
+                    </a>
+                </ul>
+        </div>
+
+
+    </div>
+        
+        <div class="the_right_page">
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="../Login/signup.html" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+{{!-- res footer --}}
+
+    {{!---------------res_footer-------------------}}
+    <div class="ctn__footer-mobile">
+        <div class="footer__colum f__strart">
+            <a href="../Login/signup.html" style="border: none;">Get Started</a>
+            <ul>
+                <li><a href="../Login/login.html">Start Fundraise</a></li>
+                <li><a href="#">Investor Signup</a></li>
+                <li><a href="#">Account Login</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__browse">
+            <a href="#">Browse</a>
+            <ul>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Recently</a></li>
+                <li><a href="#">Start-up Magazine</a></li>
+                <li><a href="#">Communities</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__resources">
+            <a href="#">Resources</a>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Guidelines</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__legal">
+            <a href="#">Legal</a>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer__colum f__follow">
+            <a href="#">Follow</a>
+            <ul class="list-follow">
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    <div class="ctn__loading__body">
+        <div class="ctn__loading">
+            <div class="ctn__loading__content">
+                
+            </div>
+        </div>
+    </div>
+
+    {{!-- boxchat --}}
+    <div class="messenger">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </div>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>Chat with PRO4!
+            <i class="fa fa-window-minimize" aria-hidden="true"></i>
+        </button>
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- To top btn -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+    {{!-- <img src="img/imgbackground/1.webp" style="width:100%;position: fixed ;top:0 ;left: 0;z-index : 0;" alt=""> --}}
+
+    <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <!-- end top btn -->
+
+
+
+       <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script  src="js/scriptproduct.js"></script>

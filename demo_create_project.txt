@@ -1,0 +1,38 @@
+Viet nam
+
+//main
+
+Hồi sinh cổ phục : tương lai nối dài từ quá khứ.
+Cổ phục việt : Từ đời sống đến điện ảnh và các vấn đề tư liệu lịch sử
+312000
+
+//FAQ
+
+Liệu cổ phục có phù hợp và phát triển với phong cách ngày nay ? 
+Chúng tôi phát triển dự án như thế nào ? 
+Ai phù hợp với cổ phục ?
+
+//story
+
+img: phuctrang1.jpg
+
+Title: Dự án Hồi sinh cổ phục : tương lai nối dài từ quá khứ.
+
+img : phuctrang2.jpg
+Content: Khi nhắc đến trang phục truyền thống của Việt Nam thì trong tâm trí mỗi chung ta chỉ nghỉ đến áo dài và áo dài. Tuy nhiên Việt Nam là một đất nước có nền văn hoá lâu đời và vô cùng đặc sắc, khi đã nhắc tới văn hoá thì không thể thiếu trang phục. Qua các triều đại khác nhau thì cha ông ta đã để lại những bộ cổ phục mang tính đặc trưng riêng của triều đại đó. Nhưng câu hỏi đặt ra ở đây là tại sao trong đầu của chúng ta thì chỉ biết đến áo dài. Đơn giản vì nó đã bị lãng quên. Và dự án “Hồi sinh cổ phục Việt Nam” sinh ra với sứ mệnh là đem lại làng gió mới đã bị lãng quên. 
+Content: Để hoàn thành được sứ mệnh cao cả đó, đội ngũ của dự án cần nguồn tài chính lớn và tìm những cộng sự chung chí hướng. Ban đầu RAC đề ra mục tiêu là kêu gọi được 5.500$ đến cuối tháng 8.Nhóm RAC đã chọn nền nảng PRO4 để đưa dự án đến với nhiều người hơn nhằm sớm đạt được mục đích ban đầu mà dự án đã đề ra. Dự án đã được public ở phần Community để mọi người có tìm hiểu và vọng tìm được nhiều các cộng sự  đồng hành cùng dự án.
+
+Title: Dự án hoạt động như nào?
+Content: Khi đạt được target 5.500$ trong đúng thời gian thì nhóm sẽ bắt đầu những bước nghiên cứu đầu tiên về các nền văn hoá của Việt Nam. Từ đó đưa ra danh sách các mẫu cổ phục qua từng triều đại, sử dụng nguồn nhân lực và sự hổ trợ của các chuyên gia để khôi phục hình dạng màu sắc các mẫu cổ phục. Từ đó cho ra những mẫu thiết kế sắc nét với độ chính xác cao so với nguyên bản , đảm bảo thể hiện được bản sắc của mỗi bộ cổ phục ở các triều đại. Để đạt được kết quả đó RAC cần rất nhiều sự hợp tác của các chuyên gia và những nhà thiết kế nhiệt huyết với dự án. Hi vọng qua nền nàng PRO4 sẽ giúp dự án kết nối đến được với mọi người.
+Img: phuctrang3.png
+Img : phuctrang4.jpg
+
+Title : Định hướng tương lai của dự án.
+
+Content : Khi đạt được target ở round đầu tiên, RAC sẽ bắt đầu kêu gọi round 2 để bắt đầu các kế hoạch khác trong tương lai. Trong tương lai dự án sẽ đẩy mạnh marketing các bộ cổ phục để đưa hình ảnh cổ phục vào trong tâm trí người Việt Nam một cách phổ biến hơn. Nhóm sẽ kết hợp với các nhà thiết kế, các nhà may để đưa ra các bộ cổ phục thực tế chứ không phải chỉ tồn tại trên hình ảnh. Đưa các bộ trang phục này vào các tấm ảnh cưới, các bộ ảnh kỉ yếu của các học sinh. Đó là chặng đường khá dài và hi vọng RAC sẽ đồng hành cùng các bạn trên nền tảng PRO4 lâu dài để đem lại nhiều giá trị tốt đẹp cho nền văn hoá của Việt Nam.
+Img : phuctrang5.jpg
+
+
+
+
+

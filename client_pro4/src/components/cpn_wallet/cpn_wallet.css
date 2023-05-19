@@ -1,0 +1,533 @@
+
+
+/*======================ctn__feature================================*/
+.ctn__feature{
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0 100px 0;
+  margin-bottom: 100px;
+  width:100%;
+  height: 850px;
+}
+
+/*==----------------------*/
+.ctn__feature__image{
+  /* background-image: url(../../public/img/imgwallet/tinh-nang-1.png); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  width:35%;
+  height:100%;
+}
+
+.ctn__feature__image h2{
+  text-align: center;
+}
+
+.ctn__feature__image div{
+  margin: 50px 0;
+}
+
+.ctn__feature__image ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.ctn__feature__image ul li{
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/*==----------------------*/
+.ctn__feature__content{
+  position: relative;
+  width: 50%;
+  height:100%;
+}
+
+.feature__title {
+  height: 10%;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px 30% 20px 0;
+  font-size: 40px;   
+ 
+}
+
+.feature__info {
+  height: 90%;
+  display: flex;
+  position: relative;
+}
+
+/*about__shopping*/
+.about__shopping {
+  width: 250px;
+  height: 250px;
+  list-style: none;
+  border-radius: 30px;
+  background-color: #f4efeb;
+  padding: 20px;
+  box-shadow: 0 1px 9px 2px #9e9e9e91;
+  position: absolute;
+  opacity: 0.6;
+  z-index: 1;
+  animation-name: aboutshopping;
+
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: normal;
+  
+}
+
+.about__shopping:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@keyframes aboutshopping {
+  0%{top: 200px;left:120px}
+  25%{top: 50px;left:50px}
+  100%{top: 50px;left:50px}
+}
+
+
+
+.about__shopping__image {
+  background-image: url(../../public/img/imgwallet/muasam.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  height: 30%;
+  width:30%;
+  margin: 0px auto;
+}
+
+.about__shopping__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.about__shopping__info {
+  
+  text-align: center;
+  color:#333333;
+  line-height: 1.6;
+}
+
+/*about try on clothes*/
+.about__tryonclothes {
+  width: 250px;
+  height: 250px;
+  list-style: none;
+  border-radius: 30px;
+  background-color: #f4efeb;
+  padding: 20px;
+  box-shadow: 0 1px 9px 2px #9e9e9e91;
+  position: absolute;
+  top: -5%;
+  z-index: 1;
+  opacity: 0.6;
+  animation-name: abouttryonclothes;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: normal;
+}
+
+.about__tryonclothes:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@keyframes abouttryonclothes {
+  0%{left:100%}
+  25%{left:55%}
+  100%{left:55%}
+}
+
+.about__tryonclothes__image {
+  background-image: url(../../public/img/imgwallet/thudo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  height: 56px;
+  width: 30px;
+  margin: 10px auto;
+
+}
+
+.about__tryonclothes__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+.about__tryonclothes__info {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color:#333333;
+}
+
+/*--------------style----------------*/
+.about__style {
+  width: 250px;
+  height: 250px;
+  list-style: none;
+  border-radius: 30px;
+  background-color: #f4efeb;
+  padding: 30px;
+  box-shadow: 0 1px 9px 2px #9e9e9e91;
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  z-index: 1;
+  opacity: 0.6;
+  animation-name: aboutstyle;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: normal;
+}
+
+.about__style:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@keyframes aboutstyle {
+  0%{top: 400px;left:500px}
+  25%{top:300px;left: 400px}
+  100%{top:300px;left: 400px}
+}
+
+.about__style__image {
+  background-image: url(../../public/img/imgwallet/phongcach.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  height: 100px;
+  width: 65px;
+  margin: 0px auto;
+}
+
+.about__style__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+.about__style__info {
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: center;
+  color:#333333;
+  width: 100%;
+}
+
+.feature__background {
+  width: 40%;
+  height: 100%;
+  background-image: url(../../public/img/imgwallet/tinh-nang-1.png);
+  background-repeat: no-repeat;
+  background: size;
+  position:absolute;
+  margin: 0 auto;
+  left: 17%;
+  top: -20px;
+}
+
+
+/*-------------ctn__solution_and_form-------*/
+.ctn__solution{
+  margin-bottom: 50px;
+}
+
+.ctn__solution button {
+
+}
+
+.ctn__solution button:hover {
+  cursor: pointer;
+  background-color: rgb(206, 217, 233);
+}
+
+.ctn__solution__title{
+    width: 100%;
+    margin: 55px 0 25px 0;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*-------------------------------------*/
+
+.ctn__solution__element{
+  height: 440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.ctn__solution__element ul{
+  width: 23%;
+  margin: 0 1%;
+}
+
+/*------------------------------------------*/
+
+.ctn__solution__element2{
+    height: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.ctn__solution__element2 ul{
+    width: 23%;
+    margin: 0 1%;
+    position: relative;
+}
+
+.ctn__solution__element2 ul:hover{
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.ctn__solution__element2 ul button{
+  border: none;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 10px;
+  background-color: #fbfbfb;
+}
+
+.ctn__solution__element2 ul button i{
+  font-size: 30px;
+}
+
+@keyframes run{
+  0% {
+    left:0;
+    opacity: 0;
+  }
+  100% {
+    left:80%;
+    opacity: 1;
+  }
+}
+
+.ctn__solution__element2 ul:hover{
+  background-color: #fbfbfb;
+  box-shadow: 0 1px 9px 2px #9e9e9e91; 
+}
+
+.ctn__solution__element2 ul:hover button{
+  background-color: #fbfbfb;
+  animation-name: run;
+  animation-duration: 2s;
+  animation-direction: normal;
+  left: 80%;
+  opacity: 1;
+}
+
+
+/*---------------------------------------------*/
+.ctn__solution__image{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    list-style: none;
+    
+}
+
+.ctn__solution__image h3{
+    width:40%;
+    object-fit: cover;
+    display: flex;justify-content: center;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.ctn__solution__image h3:hover{
+    cursor: pointer;
+}
+
+.ctn__solution__title-small{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+}
+
+.ctn__solution__title-small:hover{
+    color:#a60505;
+    cursor: pointer;
+}
+
+.ctn__solution__content{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0;
+    list-style: none;
+    width:90%;
+    line-height: 1.5;
+}
+
+/*-----------ctn__form-----------------*/
+
+/*copy phần solution*/
+
+
+/*------------------sign_up_title-----------------*/
+.model{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/*.model.open khác .model .open vì nó ưu tiên*/
+.model.open{
+    display: flex;
+}
+
+.model .ctn__model {
+    width: 60%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.ctn__model__header {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0px 0 78px;
+    padding-left: 190px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.model .ti-close {
+    
+    padding: 5px;
+}
+
+.model .ti-close:hover {
+    background-color: rgba(181, 181, 181, 0.5);
+    cursor: pointer;
+}
+
+.model .ctn__model__input{
+    display: grid;
+    height: 54%;
+}
+::placeholder{
+    color: white;
+}
+.model .ctn__model__input input{
+    margin: 10px 15%;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 15px;
+    background-color: rgba(255, 228 ,181 , 0.6);
+}
+
+.ctn__model__commit {
+    padding: 5px 4px;
+    font-size: 16px;
+    margin: 10px 15%;
+    background-color: rgba(255, 228 ,181 , 0.8);
+    border-radius: 10px;
+}
+
+.ctn__model__button{
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.ctn__model__button button {
+    margin: 0 20px;
+    width: 200px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(255, 228 ,181);
+}
+
+.model .button__comeback {
+    cursor: pointer;
+}
+
+.ctn__model__connect {
+    font-size: 20px;
+    margin: 10px 15%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.connect__google,
+.connect__inta,
+.connect__facebook{
+    margin: 0 5px;
+}
+
+.instagram{
+    color: white;
+    width: 33px;
+    height:33px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+}
+
+.ti-google {
+    color: white;
+    background-color: #d24736;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.connect__facebook .ti-facebook{
+    color: white;
+    background-color: #4580d7;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+

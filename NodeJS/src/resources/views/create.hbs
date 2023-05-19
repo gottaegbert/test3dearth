@@ -1,0 +1,194 @@
+
+
+<header>
+        <div class="nav_pc">
+            <div class="the_left_nav">
+          <div class="logo">
+              <img src="img/img_logo/logo.jpg" alt="">
+          </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input type="text" placeholder="Search...">
+            </div> 
+            </div>
+            <div class="the_center_nav">
+                <a id="homepage" class="fa-solid fa-house icon 1"></a>
+                <a id="product" class="fa-solid fa-earth-americas icon 2"></a>
+                <a id="projects" class="fa-solid fa-circle-dollar-to-slot icon 3" style="font-size: 28px;"></a>
+            </div>
+            <div class="the_right_nav" onclick=handle_user()>
+                <img id="img_login" src="{{users.img_author}}" alt="">
+                <p>{{users.name_author}}</p>
+                <ul class="user-drop">
+                        <i class="fa-solid fa-xmark project_close " > </i>
+                        <div class="menu_drop">
+                            <li>
+                               <a href="#"> Profile </a> 
+                            </li>
+                            <li>
+                                 <a href="#"> Statistic </a> 
+                            </li>
+                            <li>
+                                <a href="#"> cac </a>
+                            </li>
+                             <li>
+                                <a href="home"> Logout </a>
+                            </li>
+                        </div> 
+                    </ul>  
+            </div>
+            
+        </div>  
+</header>        
+
+<div class="body_create_prj" style="display: flex; justify-content: center;margin-top : 80px;">
+    <div style="padding: 20px;background-color: white; width : 40%;border-radius: 20px;border: 2px solid rgb(212, 179, 179);">
+        <div class="author" style="width: 100%;display : flex;justify-content: center;">
+            <div style="width: 100%; display: flex; flex-direction: row;">
+                <img src="{{users.img_author}}" alt="">
+                <div class="infor_author">
+                    <h3>{{users.name_author}}</h3>
+                    <p>public   <i class="fa-solid fa-earth-americas icon 3"></i> </p>
+                </div>
+
+            </div>
+        </div>
+        <form method="POST" action="store">
+            <div style="width: 100%; display : flex; flex-direction: column;margin : 0 30px">
+
+                <div class="infor">
+                    <input required="required" type="text" class="form-control" id="name" name="name" >
+                    <span>Name project</span>
+                </div>
+                 <div hidden="true">
+                    <label for="name_author" class="form-label">Name author</label>
+                    <input type="text" class="form-control" id="name_author" value="{{users.name_author}}"  name="name_author" >
+                </div>
+                 <div  hidden="true">
+                    <label for="img_author" class="form-label">img_author</label>
+                    <input type="text" class="form-control" id="img_author" value="{{users.img_author}}" name="img_author" >
+                </div>
+                 <div class="infor">
+                    <input required="required" type="text" class="form-control" id="infor" name="infor" >
+                    <span>Description</span>
+                </div>
+                 <div class="infor">
+                    <input style="height : 30px;padding: 40px 0 150px 30px; border-radius: 5px;" required="required" type="text" class="form-control" id="img1" name="img1" >
+                    <span>Copy link image for here</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Post</button>
+            </div>
+
+
+        </form>
+
+    </div>
+</div>
+    
+
+{{!-- footer --}}
+    <div class="ctn__footer">
+        <div class="ctn__footer__content">
+            <div class="footer__colum f__strart">
+                <a href="../Login/signup.html" style="border: none;">Get Started</a>
+                <ul>
+                    <li><a href="Login">Start Fundraise</a></li>
+                    <li><a href="#">Investor Signup</a></li>
+                    <li><a href="#">Account Login</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__browse">
+                <a href="#">Browse</a>
+                <ul>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Recently</a></li>
+                    <li><a href="#">Start-up Magazine</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__resources">
+                <a href="#">Resources</a>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__legal">
+                <a href="#">Legal</a>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer__colum f__follow">
+                <a href="#">Follow</a>
+                <ul class="list-follow">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+        <!-- another footer -->
+        <div class="ctn__footer__describle">
+            <div class="sponsor">
+                <p>Special thanks for sponsors</p>
+                <div class="ctn__brands__img">
+                    <p class="img__img">
+                        Brand A
+                    </p>
+                    <p class="img__img">
+                        Brand B
+                    </p>
+                    <p class="img__img">
+                        Brand C
+                    </p>
+                    <p class="img__img">
+                        Brand D
+                    </p>
+                    <p class="img__img">
+                        Brand E
+                    </p>
+                </div>
+            </div>
+            <div class="describle">
+                <p class="coppyright">
+                    Copyright © 2022 Startups.com. All rights reserved.
+                </p>
+                <p class="content__describle">
+                    PRO4 is a software as a service crowdfunding platform. PRO4 is not a 
+                    registered broker-dealer and does not offer investment advice or advise on the
+                     raising of capital through securities offerings. PRO4 does not recommend 
+                     or otherwise suggest that any investor make an investment in a particular company, 
+                     or that any company offer securities to a particular investor. PRO4 takes no 
+                     part in the negotiation or execution of transactions for the purchase or sale of 
+                     securities, and at no time has possession of funds or securities. No securities
+                      transactions are executed or negotiated on or through the PRO4 platform. 
+                      PRO4 receives no compensation in connection with the purchase or sale of securities. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+    <div class="ctn__loading__body">
+        <div class="ctn__loading">
+            <div class="ctn__loading__content">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+       <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+   

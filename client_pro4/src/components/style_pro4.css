@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Josefin+Sans&family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Josefin+Sans&family=Nunito:ital,wght@0,300;1,200;1,300&family=Patua+One&display=swap");
+
+/*---------animate-----------*/
+.animate__animated.animate__bounceInUp {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 2s;
+}
+
+/*--------------------------*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+:root {
+    --black: #333333;
+    --colorPrimary: #9CDDE6;
+    --colorSecondary: #FFF3C9;
+    --color-text : #333;
+    --color-text-reverse : #fff;
+    --color-page-product : linear-gradient(90deg, #f0f2f5, #f0f2f5 ,#f0f2f5, #f0f2f5 ,#f0f2f5);;
+    --color-page-details : linear-gradient(90deg, #ffffff, #afe7e7 ,#fff, #afe7e7 ,#ffffff);
+    --color-page-details-title : #56bbe7;
+    --color-page-details-title-font : #fff;
+    --background-primary-color: #84adc6;
+    --background-secondary-color: #18c2c4;
+    --darker-background-secondary-color: #149b9e;
+    --login-primary-color : #fff;
+    --primary-font : 'Poppins', sans-serif;
+    --primary-color-light: #f6f5ff;
+    --header-color: #fff;
+    --body-color: #ffffff;
+    --search-color: #ebebeb;
+    --nav-center-icon-color: #e0e0e0;
+    --page-color: #f7f7f7;
+    --the_left_page-color: #fff;
+    --text-the_left_page-color: #727272;
+    --toggle-color: #ddd;
+    --shadow-header-color: #dbdbdb;
+    --footer-end-color: #2a262c;
+    --footer-content-color: #666;
+    --footer-content-color-bright: #7b8490;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+
+   
+}
+body.dark {
+  --color-page-product : linear-gradient(90deg, #18191a, #18191a);
+  --color-page-details-title-font : #333;
+  --color-page-details-title : rgb(223, 223, 223);
+  --color-text : #fff;
+  --color-text-reverse : #fff;
+  --color-page-details : linear-gradient(90deg, #18191a, #18191a);
+  --primary-color-light: #f6f5ff;
+  --header-color: #242526;
+  --body-color: #18191a;
+  --search-color: #494949;
+  --nav-center-icon-color: #868383;
+  --page-color: #18191a;
+  --the_left_page-color: #242526;
+  --text-the_left_page-color: #ccc;
+  --toggle-color: #fff;
+  --shadow-header-color: #383636;
+}
+body {
+  transition: var(--tran-04);
+  position: relative;
+  /* overflow: hidden; */
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #5a5a5a;
+  background-color: var(--body-color);
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}

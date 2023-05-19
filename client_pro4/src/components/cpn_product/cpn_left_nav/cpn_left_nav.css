@@ -1,0 +1,230 @@
+.the_left_page_product {
+  margin-top: 5%;
+  background-color: var(--the_left_page-color);
+  display: flex;
+  width: 22%;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px 1px var(--shadow-header-color);
+}
+.letf_page {
+  position: fixed;
+}
+
+.the_left_page_product li {
+  margin-top: 11%;
+  list-style: none;
+}
+.the_left_page_product .menu li {
+  transition: all 0.5s;
+  margin-left: 7%;
+  padding-left: 25px;
+  margin-right: 7%;
+}
+.the_left_page_product .menu a {
+  color: var(--text-the_left_page-color);
+}
+.the_left_page_product .menu li:hover,
+.the_left_page_product .menu li:hover {
+  background-color: var(--nav-center-icon-color);
+  padding: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.the_left_page_product li span {
+  font-weight: bold;
+  font-size: 17px;
+  color: var(--text-the_left_page-color);
+}
+.the_left_page_product li .icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.the_left_page_product .mode {
+  margin-left: 14%;
+  margin-top: 15%;
+  display: flex;
+}
+.the_left_page_product .mode .moon-sun {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+}
+.the_left_page_product .mode i {
+  position: absolute;
+}
+.the_left_page_product .mode-text {
+  font-size: 16px;
+}
+.the_left_page_product .mode i.sun {
+  opacity: 0;
+}
+body.dark .the_left_page_product .mode i.sun {
+  opacity: 1;
+}
+body.dark .the_left_page_product .mode i.moon {
+  opacity: 0;
+}
+.the_left_page_product .mode .toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 60px;
+  cursor: pointer;
+}
+.toggle-switch .switch {
+  position: relative;
+  height: 22px;
+  width: 44px;
+  border-radius: 25px;
+  background: var(--toggle-color);
+}
+.switch::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background: var(--the_left_page-color);
+  transition: var(--tran-03);
+}
+body.dark .switch::before {
+  left: 25px;
+}
+/* center page */
+.center_page {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-top: 5%;
+  color: var(--text-the_left_page-color);
+}
+.Infor {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--the_left_page-color);
+  padding: 10px;
+  width: 510px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 4px 1px var(--shadow-header-color);
+  position: relative;
+}
+.Infor .author img {
+  width: 50px;
+  border-radius: 50%;
+}
+.Infor .author {
+  margin-top: 5px;
+  margin-left: 8px;
+  display: flex;
+}
+hr {
+  margin-top: 30px;
+}
+.img1 {
+  display: flex;
+}
+.img {
+  margin-top: 10px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.emotion {
+  margin-top: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+.emotion i {
+  margin: 0 10px 0 3px;
+}
+.decription {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.donate-investment {
+  display: flex;
+  margin-top: 5px;
+}
+.donate-investment .donate {
+  margin-right: 20px;
+  padding: 7px;
+  border: solid 1px #5a5a5a;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.donate-investment .donate:hover,
+.donate-investment .donate:active {
+  background-color: var(--nav-center-icon-color);
+  cursor: pointer;
+}
+.donate-investment .investment {
+  padding: 7px;
+  border: solid 1px #5a5a5a;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.donate-investment .investment:hover,
+.donate-investment .investment:active {
+  background-color: var(--nav-center-icon-color);
+  cursor: pointer;
+}
+.Infor .info-des {
+  margin-top: 5px;
+}
+.AI .info-des img {
+  width: 250px;
+}
+.Infor .info-des p {
+  margin-left: 15px;
+}
+
+.infor_author {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  align-content: center;
+}
+.author .infor_author span {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.img-App img {
+  width: 100%;
+  margin-top: 10px;
+}
+.video-game {
+  margin-top: 10px;
+}
+.img-Costume {
+  display: flex;
+  margin-right: 2px;
+  margin-top: 10px;
+}
+.img-Costume .img_item1 {
+  width: 290px;
+  height: 435px;
+  margin-right: 1px;
+}
+.img-Costume .img-item {
+  display: flex;
+  flex-direction: column;
+}
+.img-Costume .img-item img {
+  width: 200px;
+  margin-top: 1px;
+}
